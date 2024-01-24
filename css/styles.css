@@ -1,0 +1,1082 @@
+/* general styles */
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	:root {
+	  --lima: #cde35f;
+	  --naranja: #ca7650;
+	  --verde: #2c4c51;
+	  --azul: #4646d6;
+	  --gris: #dbd7d4;
+	}
+	a{
+		text-decoration: none;
+		color: unset;
+	}
+
+
+/* Fuentes */
+	@font-face {
+	  font-family: AcuminVariableBold;
+	  font-weight: bold;
+	  src: url('../fonts/AcuminVariableConcept.ttf');
+	}
+	@font-face {
+	  font-family: FilsonProBlack;
+	  src: url('../fonts/FilsonProBlack.otf');
+	}
+	@font-face {
+	  font-family: FilsonProBold;
+	  src: url('../fonts/FilsonProBold.otf');
+	}
+	@font-face {
+	  font-family: FilsonProRegular;
+	  src: url('../fonts/FilsonProRegular.otf');
+	}
+	@font-face {
+	  font-family: FilsonProMedium;
+	  src: url('../fonts/FilsonProMedium.otf');
+	}
+	html {
+	  /*scroll-behavior: smooth;*/
+	}
+	body{
+	  	font-family: FilsonProRegular, sans-serif;
+		background-color: var(--verde);
+		background-image: url('../img/portada/textura_1.png');
+		overflow-x: hidden;
+	}
+
+/* Portada */
+	.portada{
+		background-color: var(--lima);
+		height: 90vh;
+		background-image: url('../img/portada/textura_1.png');
+		position: relative;
+		padding-top: 2.5vw;
+		min-height: 750px;
+	}
+	.portada_titulo{
+		margin: 0 auto;
+		display: flex;
+		height: 4vw;
+		width: 40%;
+		justify-content: center;
+		align-items: center;
+		column-gap: 2px;
+	}
+	.portada_titulo_letra{
+		height: 100%;
+		display: block;
+	}
+	.portada_h1{
+		text-align: center;
+		padding-top: .9rem;
+		font-size: 1.4rem;
+	  	font-family: AcuminVariableBold, sans-serif;
+	}
+	.portada_algodon1{
+		position: absolute;
+		top: -18%;
+		left: -4.5%;
+		width: 17%;
+		animation: float1 6s ease-in-out infinite;
+	}
+	.portada_algodon2{
+		position: absolute;
+		top: -22%;
+		right: -5%;
+		width: 17%;
+		animation: float2 6s ease-in-out infinite;
+	}
+	.portada_hilo1{
+		position: absolute;
+		width: 22%;
+		left: 14%;
+		top: -12%;
+	}
+	/* flores */
+		.portada_planta_algodon2{
+			width: 16%;
+			position: absolute;
+			right: -4.5%;
+			bottom: 12%;
+			z-index: 10;
+		}
+		/* planta 1 */
+			.portada_planta_cortada1_div{
+				position: absolute;
+				left: -4%;
+				bottom: 7%;
+				width: 17%;
+				z-index: 10;
+			}
+			.portada_planta_cortada1{
+				width: 100%;
+				position: relative;
+				bottom: 12%;
+				z-index: 10;
+			}
+			.portada_flor_planta1{
+				transform-origin: bottom right;
+				width: 45%;
+				position: absolute;
+				right: 21%;
+				bottom: 44%;
+				z-index: 5;
+				animation: flowerDrop 8s linear infinite;
+			}
+			.portada_flor_planta11{
+				transform-origin: bottom right;
+				width: 50%;
+				position: absolute;
+				right: 16%;
+				bottom: 74%;
+				z-index: 5;
+				animation: dropFlower 8s linear infinite;
+			}
+
+
+			.portada_planta_cortada2_div{
+				position: absolute;
+				bottom: 12%;
+				right: -5.5%;
+				z-index: 20;
+				width: 18%;
+			}
+			.portada_planta_cortada{
+				width: 100%;
+				position: relative;
+				bottom: 12%;
+				z-index: 10;
+			}
+
+			.portada_flor_planta2{
+				transform-origin: bottom right;
+				width: 36%;
+				position: absolute;
+				right: 55%;
+				top: -8%;
+				z-index: 5;
+				animation: dropFlower 4s linear infinite;
+			}
+			.portada_flor2_planta21{
+				transform-origin: bottom right;
+				width: 33%;
+				position: absolute;
+				right: 27%;
+				bottom: 56%;
+				z-index: 5;
+				animation: dropFlower 8s linear infinite;
+			}
+			.portada_flor2_planta22{
+				transform-origin: bottom right;
+				width: 50%;
+				position: absolute;
+				right: 30%;
+				bottom: 21%;
+				z-index: 5;
+				animation: flowerLeave 8s linear infinite;
+			}
+		
+	.portada_hilo2{
+		position: absolute;
+		bottom: 10%;
+		width: 8%;
+	}
+	.portada_hilo3{
+		position: absolute;
+		width: 40%;
+		right: 3%;
+		bottom: 15%;
+	}
+
+	.portada_bloqueAzul{
+		background-color: rgba(44, 76, 81);
+		background-image: url('../img/portada/textura_1.png');
+		width: 100%;
+		height: 5.5rem;
+		position: absolute;
+		top: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		column-gap: 2rem;
+		color: #fff;
+		text-transform: uppercase;
+		font-family: sans-serif;
+		letter-spacing: 1px;
+		font-size: .8rem;
+		z-index: 100;
+	}
+	.portada_bloqueAzul_icons{
+		 animation: mover .8s infinite  alternate;
+	}
+	.portada_bloqueAzul div{
+		display: flex;
+		column-gap: .8rem;
+	  	font-family: FilsonProRegular;
+	}
+	/* ropa  */
+		.portada_ropa{
+			/*background-color: palegoldenrod;*/
+			position: absolute;
+			width: 65%;
+			height: 39vw;
+			bottom: 0;
+			left: 17.5%;
+			z-index: 15;
+		}
+		.portada_ropa .portada_falda, .portada_ropa .portada_lentes, .portada_ropa .portada_chaleco{
+			position: relative;
+			z-index: 25;
+		}
+		.portada_montanaRopaBN{
+			width: 100%;
+			height: max-content;
+			z-index: 10;
+			position: absolute;
+			bottom: 0;
+		}
+		.portada_chaleco{
+			position: relative;
+			width: 13.5%;
+			left: 43.6%;
+			bottom: 3%;
+			z-index: 25;
+		    animation: blink-1 1.5s both infinite;
+			/*animation: flicker-1 2s linear infinite both;*/
+		}
+		.portada_lentes{
+			width: 3.4%;
+			left: 34.2%;
+			top: -26%;
+			z-index: 25;
+		}
+		.portada_falda{
+			animation: flicker-1 2s linear infinite both;
+		}
+		.portada_falda1{
+			width: 18%;
+			left: 14.5%;
+			top: 39%;
+		}
+		.portada_falda2{
+			width: 6%;
+			left: 13.2%;
+			top: 7.5%;
+		}
+		.portada_falda3{
+			width: 1.8%;
+			left: 5.5%;
+			top: -5.5%;
+		}
+		.portada_falda4{
+			width: 18.5%;
+			left: 4.8%;
+			top: 24.8%;
+		}
+		.portada_ropa .portada_falda.portada_falda4{
+			z-index: 30;
+		}
+		.portada_falda5{
+			width: 6.4%;
+			left: -14%;
+			top: 23.5%;
+		}
+		.portada_falda6{
+			width: 4.2%;
+			left: -24.5%;
+			top: 30.9%;
+		}
+		.portada_falda7{
+			width: 14%;
+			left: -24%;
+			top: 38%;
+		}
+
+	/* ropa escondida */
+		.portada_escondida{
+			position: absolute;
+			/*transition: transform 2s ease-out;*/
+		}
+		.portada_escondida_tenis1{
+			width: 13%;
+			left: -.5%;
+			bottom: 3%;
+			z-index: 10;
+			transform: rotate(-36.5deg);
+		}
+		.portada_escondida_lentes2{
+			width: 7%;
+			left: 43%;
+			bottom: 1%;
+			z-index: 20;
+			transform: rotate(-33.53deg);
+		}
+		.portada_escondida_chamarra1_cropped{
+			width: 25%;
+			left: 3.2%;
+			bottom: 2%;
+			z-index: -10;
+			transform: rotate(-11.75deg);
+		}
+		.portada_escondida_chamarra1{
+			width: 25%;
+			left: 40%;
+			bottom:  -6%;
+			z-index: -20;
+			transform: rotate(-11.75deg);
+		}
+		.portada_escondida_pulsera{
+			width: 4.5%;
+			left: 13%;
+			bottom: 2%;
+			transform: rotate(20deg);
+			z-index: 20;
+		}
+		.portada_escondida_lentes{
+			width: 7%;
+			left: 16%;
+			bottom: 4%;
+			transform: rotate(-157.125deg);
+			z-index: 20;
+		}
+		.portada_escondida_tenis2{
+			width: 12%;
+			left: 21%;
+			bottom: 3%;
+			transform: rotate(-33.53deg);
+			z-index: 20;
+		}
+		.portada_escondida_jeans2{
+			width: 13%;
+			left: 26%;
+			bottom: 2%;
+			z-index: 20;
+			transform: rotate(-62.7deg);
+		}
+		
+		.portada_escondida_jeans21{
+			width: 16%;
+			left: 53%;
+			bottom: -2.5%;
+			transform: rotate(-357.72deg);
+			z-index: 30;
+		}
+		.portada_escondida_pulsera2{
+			width: 4.5%;
+			left: 64.3%;
+			bottom: 2%;
+			transform: rotate(20deg);
+			z-index: 35;
+		}
+		.portada_escondida_tenis11{
+			width: 13%;
+			left: 75%;
+			bottom: 5%;
+			z-index: 23;
+			transform: rotate(-343.79deg);
+		}
+		.portada_escondida_chamarra2{
+			width: 19%;
+			left: 62%;
+			bottom: -10%;
+			z-index: -10;
+			transform: rotate(-112deg);
+		}
+		.portada_escondida_chamarra11{
+			width: 25%;
+			left: 50%;
+			bottom: -8%;
+			z-index:-10;
+			transform: rotate(-33.73deg)  scale(.5);
+		}
+		.portada_escondida_chamarra11_cropped{
+			width: 10%;
+			left: 78%;
+			bottom: 3%;
+			z-index: -10;
+			transform: rotate(-20deg);
+		}
+		.portada_escondida_chamarra21{
+			width: 23%;
+			left: 31%;
+			bottom: 9%;
+			z-index: -10;
+			transform: rotate(-201.98deg);
+		}
+		.portada_escondida_ropa1{
+			width: 18%;
+			left: 60%;
+			bottom: 0%;
+			z-index: 20;
+			transform: rotate(-3.03deg);
+		}
+
+/* Portada Pregunta */
+
+	.portada_pregunta_section{
+		background-color: var(--verde);
+		background-image: url('../img/portada/textura_1.png');
+		/*border: solid hotpink;*/
+		position: relative;
+		/*padding-bottom: 40vh;*/
+		margin-bottom: 20vh;
+	}
+	.portada_pregunta_bloque{
+		position: relative;
+		height: 20vh;
+	}
+	.portada_aux{
+		position: absolute;
+		background-color: chocolate;
+		width: 100px;
+		height: 65vh;
+		top: 20%;
+		left: 0;
+		z-index: 200;
+	}
+	.portada_aux_texto{
+		position: absolute;
+		background-color: aliceblue;
+		width: 100px;
+		height: 50px;
+		top: 50%;
+		left: 0;
+		z-index: 200;
+	}
+	.portada_aux_salida{
+		position: absolute;
+		background-color: peachpuff;
+		width: 100px;
+		height: 50px;
+		bottom: 0;
+		left: 0;
+		z-index: 200;
+		top: 140%;
+	}
+	.portada_aux_ropa_sale{
+		position: absolute;
+		background-color: steelblue;
+		width: 100px;
+		height: 50vh;
+		z-index: 200;
+		top: 150%;
+	}
+	.portada_pregunta{
+		height: 110vh;
+		min-height: 850px;
+		position: relative;
+		/*overflow: hidden;*/
+		/*display: flex;*/
+		align-items: center;
+		z-index: 11;
+		padding-top: 20%;
+		/*border: solid palegoldenrod;*/
+	}
+	.portada_pregunta_sticky{
+		position: absolute;
+		top: 15%;
+	}
+	.portada_pregunta-botones{
+		display: none;
+		position: fixed;
+		z-index: 100;
+		top: 5rem;
+		padding: 0 2rem;
+		width: 100%;
+		justify-content: space-between;
+	}
+	.btn-main{
+		background-color: rgba(255, 255, 255, .5);
+		border-radius: 2rem;
+		width: 9rem;
+		padding: 6px;
+		text-align: center;
+		font-size: .9rem;
+		font-family: FilsonProBlack, sans-serif;
+	}
+	.portada_pregunta_centro{
+		width: 65%;
+		min-width: 800px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		color: #fff;
+		position: sticky;
+		top: 40%;
+	}
+	.logos{
+		width: 23rem;
+	}
+	.portada_pregunta_centro h2{
+		font-size: 4.2rem;
+		margin-top: 1.5rem;
+		margin-bottom: 3rem;
+		font-family: FilsonProBold;
+	}
+	.portada_pregunta_centro p{
+		font-family: FilsonProRegular;
+		text-transform: uppercase;
+		font-size: .7rem;
+		letter-spacing: 1px;
+		margin-bottom: 12px;
+	}
+	
+	.gota1{
+		position: absolute;
+		left: 48.7%;
+		bottom: -10%;
+		display: block;
+		width: 2.5%;
+		/*background-color: lightblue;*/
+	}
+	.gota1_fixed{
+		position: fixed;
+		top: 80%;
+		left: 49.8%;
+	}
+
+/* intro 1 */
+	.intro1{
+		background-color: var(--verde);
+		background-image: url('../img/portada/textura_1.png');
+		height: 1900vh;
+		position: relative;
+		/*border: solid hotpink;*/
+	}
+	.intro1_centro{
+		width: 100%;
+		z-index: 20;
+		width: 25%;
+		left: 37.5%;
+		height: 100vh;
+		/*border: solid blue;*/
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: sticky;
+		top: 100%;
+	}
+	.div_planeta1_abajo{
+		/*border: solid;*/
+		position: relative;
+		top: 10%;
+	}
+	.intro1_planeta{
+		display: block;
+		position: relative;
+		width: 100%;
+		z-index: 10;
+		top: 10%;
+		/*transition: all 1s ease;*/
+	}
+	.intro1_planeta_bottom{
+		display: block;
+		position: absolute;
+		width: 59%;
+		left: 20%;
+		z-index: 0;
+		top: 96.5%;
+		/*transition: all 1s ease;*/
+		transform: rotate(-9.2deg);
+		transform-origin: top left;
+	}
+	.intro1_planeta_arriba{
+		display: block;
+		width: 78%;
+		position: absolute;
+		z-index: 30;
+		top: 19.8%;
+		left: 7%;
+		z-index: 40;
+		transform: rotate(25.5deg);
+		transform-origin: bottom left;
+		/*transition: all 1s ease;*/
+	}
+	.intro1_ballena{
+		position: absolute;
+		width: 55%;
+		top: 45%;
+		right: 10%;
+		/*top: 7%;
+		right: -4.5%;*/
+		/*transition: all 1.5s ease;*/
+	}
+	
+	.intro1_gota{
+		position: absolute;
+		top: 35%;
+		width: 10%;
+		left: 50%;
+		z-index: 20;
+	}
+	#gotaI1{
+		position: absolute;
+		left: 49.8%;
+		top: 50%;
+		display: block;
+		width: 2%;
+		/*border: solid palegoldenrod;*/
+	}
+	.intro1_nuestroplaneta{
+		position: absolute;
+		width: 120%;
+		transform-origin: top left;
+		/*text-transform: uppercase;*/
+		/*border: solid beige;*/
+		top: 30%;
+		left: 10%;
+		/*top: 8%;
+		left: -50%;*/
+		font-size: 20%;
+	}
+	.intro1_texto{
+		color: var(--verde);
+		width: 70%;
+		position: absolute;
+		left: 10%;
+		top: 48%;
+		/*left: -75%;
+		top: 48%;*/
+		text-align: right;
+		font-family: FilsonProMedium, sans-serif;
+		font-size: 1.2rem;
+		z-index: -10;
+	}
+	.intro1_texto_70{
+		font-size: 4rem;
+		font-family: FilsonProBlack, sans-serif;
+	}
+
+/*Intro2 */
+	.intro_aux{
+		position: absolute;
+		width: 100px;
+		height: 50px;
+		z-index: 2000;
+		left: 10px;
+		visibility: hidden !important;
+	}
+	.portadaAux{
+		visibility: hidden;
+	}
+	.intro_salida_ropa{
+		background-color: mediumseagreen;
+		top: 3.5%;
+		height: 50px;
+	}
+	.intro01{
+		background-color: sandybrown;
+		top: 4.5%;
+	}
+	.intro02{
+		background-color: rosybrown;
+		top: 7.5%;
+		z-index: 3000;
+	}
+	.intro03{
+		background-color: saddlebrown;
+		top: 10%;
+		z-index: 3000;
+
+	}
+	.intro04{
+		background-color: brown;
+		top: 12.5%;
+	}
+	.intro05{
+		background-color: orangered;
+		top: 15%;
+	}
+	.intro06{
+		background-color: palevioletred;
+		top: 17.5%;
+	}
+	.intro07{
+		background-color: mediumvioletred;
+		top: 20%;
+	}
+	.intro2{
+		background-color: blue;
+		top: 22.5%;
+	}
+	.intro021{
+		background-color: cyan;
+		top: 25%;
+	}
+	.intro3{
+		background-color: hotpink;
+		top: 27.5%;
+	}
+		
+	.intro31{
+		background-color: purple;
+		top: 30%;
+	}
+	.intro32{
+		background-color: tomato;
+		top: 32.5%;
+	}
+	.intro33{
+		background-color: dodgerblue;
+		top: 35%;
+	}
+
+	.intro34{
+		background-color: goldenrod;
+		top: 37.5%;
+	}
+	
+	.intro2_gota{
+		position: absolute;
+		top: 88%;
+		width: 1%;
+		left: 78%;
+		z-index: 40;
+		/*transition: all 1.5s ease;*/
+		transform-origin: top;
+		visibility: hidden;
+
+	}
+	.intro3_texto{
+		position: absolute;
+		/*border: solid hotpink;*/
+		width: 100%;
+		height: 100%;
+		font-family: FilsonProMedium, sans-serif;
+		font-size: 1.2rem;
+	}
+
+	.intro3_texto p span{
+		display: block;
+		font-size: 4rem;
+		font-family: FilsonProBlack, sans-serif;
+	}
+	.intro3_texto-97{
+		text-align: right;
+		position: absolute;
+		left: 5%;
+		bottom: 40%;
+		color: var(--verde);
+		/*transition: all 1s ease;*/
+		z-index: -10;
+	}
+	.intro3_texto-97:after{
+		content: '';
+		position: absolute;
+		height: 2px;
+		width: 50%;
+		background-color: var(--verde);
+		top: 50%;
+		left: 102%;
+	}
+
+	.intro3_texto-2{
+		position: absolute;
+		left: 25%;
+		bottom: 28%;
+		color: var(--azul);
+		/*transition: all 1s ease;*/
+		z-index: -10;
+	}
+	.intro3_texto-2:after{
+		content: '';
+		position: absolute;
+		height: 2px;
+		width: 70%;
+		background-color: var(--azul);
+		top: 50%;
+		left: 110%;
+		z-index: -10;
+	}
+	.intro35{
+		background-color: forestgreen;
+		top: 40%;
+	}
+	.intro36{
+		background-color: deeppink;
+		top: 42.5%;
+	}
+	.intro37{
+		background-color: silver;
+		top: 43.75%;
+	}
+
+	.intro38{
+		background-color: darkkhaki;
+		top: 45%;
+	}
+
+/* intro 4 */
+	
+	.intro4{
+		background-color: var(--azul);
+		height: 100vh;
+		width: 100%;
+		/*border: solid greenyellow;*/
+		font-family: FilsonProMedium, sans-serif;
+		font-size: 1.2rem;
+		position: fixed;
+		top: 0%;
+		/*transform: translateY(-100%);*/
+		visibility: hidden;
+		/*transition: all 1.5s ease;*/
+	}
+	.intro4_gota{
+		/*border: solid lavender;*/
+		width: 20%;
+		left: 40%;
+		height: 100vh;
+		position: relative;
+		top: -100%;
+		/*transition: all 2s ease;*/
+	}
+	.intro4_gota1{
+		position: relative;
+		top: 10%;
+		width: 100%;
+		/*transition: all 1.5s ease;*/
+	}
+	.intro4_gota2{
+		position: absolute;
+		width: 99.5%;
+		top: 54%;
+		left: -2.5%;
+		transform: rotate(-11deg);
+		z-index: 11;
+		transform-origin: top left;
+		/*transition: all 1.5s ease;*/
+	}
+	.intro4_gota3{
+		position: absolute;
+		width: 50%;
+		top: 73%;
+		left: 23%;
+		transform: rotate(14deg);
+		/*transform: translateX(-25%) translateY(75%);*/
+		transform-origin: top right;
+		z-index: 10;
+		/*transition: all 1.5s ease;*/
+	}
+	.intro41{
+		background-color: lavenderblush;
+		top: 46%;
+	}
+	.intro42{
+		top: 50%;
+		background-color: lawngreen;
+	}
+	.intro43{
+		background-color: lightpink;
+		top: 52.5%;
+	}
+	.intro44{
+		background-color: darkorange;
+		top: 55%;
+	}
+	.intro45{
+		background-color: powderblue;
+		top: 57.5%;
+	}
+	.intro46{
+		background-color: fuchsia;
+		top: 60%;
+	}
+	.intro47{
+		background-color: mediumspringgreen;
+		top: 62.5%;
+	}
+	.intro48{
+		background-color: limegreen;
+		top: 65%;
+	}
+	.intro4 p span{
+		display: block;
+		font-size: 4rem;
+		font-family: FilsonProBlack, sans-serif;
+	}
+	.intro4_65{
+		color: #dbd7d4;
+		position: absolute;
+		left: 25%;
+		top: 40%;
+		width: 65%;
+		z-index: -10;
+		/*transition: all 1.5s ease;*/
+	}
+	.intro4_30{
+		color: #dbd7d4;
+		position: absolute;
+		/*left: -60%;
+		top: 55%;*/
+		top: 40%;
+		left: 20%;
+		z-index: -10;
+		/*transition: all 1.5s ease;*/
+	}
+	.intro4_04{
+		color: #cde35f;
+		position: absolute;
+		/*top: 75%;
+		left: -40%;*/
+		top: 60%;
+		left: 15%;
+		/*transition: all 1.5s ease;*/
+	}
+	
+	.intro4_gotaverde{
+		width: .5%;
+		position: absolute;
+		top: 83.5%;
+		left: 13%;
+		transform-origin: top;
+		visibility: hidden;
+		/*transition: all 1.5s ease;*/
+		/*transform: scale(20) translateY(45%);*/
+	}
+	
+
+/* Intro 5 */
+	.intro49{
+		background-color: lightpink;
+		top: 67.5%;
+	}
+	.intro492{
+		background-color: darkorchid;
+		top: 70%;
+	}
+	.intro50{
+		background-color: mediumblue;
+		top: 77.5%;
+	}
+	.intro51{
+		background-color: coral;
+		top: 77.5%;
+	}
+	.intro520{
+		background-color: palegreen;
+		top: 80%;
+		z-index: 3000;
+	}
+	.intro530{
+		background-color: palegreen;
+		top: 82.5%;
+		z-index: 3000;
+	}
+	.intro540{
+		background-color: palegreen;
+		top: 85%;
+		z-index: 3000;
+	}
+	.intro5{
+		/*height: 250vh;*/
+		background-color: var(--lima);
+		/*border: solid deeppink;*/
+		position: fixed;
+		top: 0;
+		width: 100%;
+		visibility: hidden;
+	}
+	.intro5_img{
+		/*border: solid blue;*/
+		height: 100vh;
+		/*position: sticky;
+		top: 0;*/
+		position: relative;
+		right: -100%;
+		/*transition: all 1.5s ease;*/
+	}
+	.intro5_agua{
+		width: 80%;
+		position: absolute;
+		right: 0;
+		bottom: -1.5%;
+	}
+	.intro5_azul{
+		width: 33%;
+		position: absolute;
+		right: 45.9%;
+		bottom: -.6%;
+		z-index: 12;
+		opacity: 0;
+	}
+	.intro5_verde{
+		width: 15%;
+		position: absolute;
+		right: -2%;
+		bottom: -4%;
+	}
+	.intro5_texto{
+		position: absolute;
+		top: 73%;
+		left: 32%;
+		font-family: FilsonProMedium, sans-serif;
+		font-size: 1.5rem;
+		color: var(--azul);
+		text-align: right;
+		width: 15%;
+		z-index: -10;
+	}
+	.intro4_nuestroplaneta{
+		position: absolute;
+		width: 30%;
+		transform-origin: top left;
+		/*top: 20%;
+		left: 30%;*/
+		top: 65%;
+		left: 45%;
+		font-size: 20%;
+		z-index: -10;
+	}
+	.intro5_texto span{
+		display: block;
+		font-size: 3.5rem;
+		font-family: FilsonProBlack, sans-serif;
+	}
+	.intro52 {
+	    width: 100%;
+	    height: 105vh;
+	    position: sticky;
+	    top: 100%;
+	    background:  url('../img/intro/fondo_negro63.png'), url('../img/intro/fondo_pared.svg');
+	    background-size: 100%, 100%;
+	}
+	.intro52_texto{
+		color: #e1ddda;
+		/*border: solid;*/
+		position: relative;
+		width: 40%;
+		margin: 0 auto;
+		top: 25%;
+		text-align: center;
+	}
+	.intro52_inicio{
+		font-family: 'FilsonProBold', sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 1.2rem;
+		/*visibility: hidden;*/
+		opacity: 0;
+	}
+	.intro52_impacto{
+		font-family: 'FilsonProBold', sans-serif;
+		font-size: 3rem;
+		padding: 2rem 0;
+		/*visibility: hidden;*/
+		opacity: 0;
+	}
+	.intro52_huella{
+		font-size: 1rem;
+		padding: 0 5rem;
+		line-height: 1.5;
+		font-family: 'FilsonProRegular', sans-serif;
+		/*visibility: hidden;*/
+		opacity: 0;
+	}
+

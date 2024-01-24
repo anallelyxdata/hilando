@@ -1,0 +1,393 @@
+/* Ciclo de vida */
+	.kaleidoscope{
+		width: 500px;
+		height: 500px;
+		z-index: 0;
+	}
+	.section_ciclo{
+		height: 1000vh;
+		/*border: solid;*/
+		background-color: var(--verde);
+		background-image: url('../img/portada/textura_1.png');
+		background-attachment: fixed;
+		background-size: 100%;
+		transition: all 2s ease;
+		position: relative;
+	}
+	.section_ciclo_sticky{
+		position: sticky;
+		top: 0;
+		margin-bottom: 50px;
+	}
+	.ciclo_titulo{
+		text-align: center;
+		padding-top: 3%;
+		color: #fff;
+	}
+	.ciclo_titulo h2{
+		font-family: 'FilsonProBold', sans-serif;
+		color: var(--lima);
+		font-size: 3.5rem;
+		transition: all 2s ease;
+
+	}
+	.ciclo_titulo p{
+		font-family: FilsonProRegular, sans-serif;
+		font-size: 1.1rem;
+		transition: all 2s ease;
+
+	}
+	.ciclo_p{
+		margin-top: 3rem;
+		text-align: center;
+		color: #fff;
+	}
+	.kaleidos_div{
+		/*border: solid palegoldenrod;*/
+		width: 580px;
+		height: 580px;
+		margin: 0 auto;
+		margin-top: 8vh;
+		position: relative;
+	}
+	.k_circle_dashed{
+		position: absolute;
+		border: 5px dashed var(--lima);
+		width: 102%;
+		height: 102%;
+		border-radius: 100%;
+		transition: all 2s ease;
+		top: -1%;
+		left: -1%;
+		/*background-color: var(--verde);*/
+		z-index: -10;
+	}
+	.k_circle_1{
+		border: 40px solid rgba(31, 74, 79);
+		opacity: .76;
+		width: 100%;
+		height: 100%;
+		border-radius: 100%;
+		transition: all 2s ease;
+
+		/*background-color: var(--verde);*/
+	}
+	.k_circle_2{
+		position: absolute;
+		border: 35px solid var(--verde);
+		width: 91%;
+		height: 91%;
+		border-radius: 100%;
+		top: 4.5%;
+		left: 4.5%;
+		z-index: 200;
+		transition: all 2s ease;
+
+	}
+	.k_circle_3{
+		position: absolute;
+		border: 1px solid var(--lima);
+		width: 82%;
+		height: 82%;
+		border-radius: 100%;
+		top: 9%;
+		left: 9%;
+		z-index: 600;
+		transition: all 2s ease;
+
+	}
+	.k_circle_4{
+		position: absolute;
+		border: 1px solid var(--lima);
+		width: 94%;
+		height: 94%;
+		border-radius: 100%;
+		top: 3%;
+		left: 3%;
+		/*z-index: 600;*/
+		transition: all 2s ease;
+
+	}
+	.slices{
+		display: flex;
+	    position: absolute;
+	    top: 3.5%;
+	    width: 93%;
+	    height: 93%;
+	    justify-content: center;
+	    /*border: solid;*/
+	    left: 3.5%;
+	}
+	.slice{
+		position: absolute;
+		height: 100%;
+		width: 1px;
+		background-color: var(--lima);
+	    z-index: 600;
+	}
+	.slice1{
+		transform: rotate(0deg);
+	}
+	.slice2{
+		transform: rotate(60deg);
+	}
+	.slice3{
+		transform: rotate(120deg);
+	}
+	@keyframes rotate {
+		0% {
+		-webkit-transform: rotate3d(0, 0, 1, 45deg);
+		transform: rotate3d(0, 0, 1, 45deg);
+		}
+		25% {
+		-webkit-transform: rotate3d(0, 0, 1, 90deg);
+		transform: rotate3d(0, 0, 1, 90deg);
+		}
+		50% {
+		-webkit-transform: rotate3d(0, 0, 1, 180deg);
+		transform: rotate3d(0, 0, 1, 180deg);
+		}
+		75% {
+		-webkit-transform: rotate3d(0, 0, 1, 270deg);
+		transform: rotate3d(0, 0, 1, 270deg);
+		}
+		100% {
+		-webkit-transform: rotate3d(0, 0, 1, 360deg);
+		transform: rotate3d(0, 0, 1, 360deg);
+		}
+	}
+	@keyframes rotate2 {
+		0% {
+		-webkit-transform: rotate3d(0, 0, 1, 0deg);
+		transform: rotate3d(0, 0, 1, 0deg);
+		}
+		25% {
+		-webkit-transform: rotate3d(0, 0, 1, 90deg);
+		transform: rotate3d(0, 0, 1, 90deg);
+		}
+		50% {
+		-webkit-transform: rotate3d(0, 0, 1, 180deg);
+		transform: rotate3d(0, 0, 1, 180deg);
+		}
+		75% {
+		-webkit-transform: rotate3d(0, 0, 1, 270deg);
+		transform: rotate3d(0, 0, 1, 270deg);
+		}
+		100% {
+		-webkit-transform: rotate3d(0, 0, 1, 360deg);
+		transform: rotate3d(0, 0, 1, 360deg);
+		}
+	}
+	.cuadro{
+		position: absolute;
+		top: 22%;
+		left: 22%;
+		width: 56.5%;
+		height: 56.5%;
+		background-color: var(--lima);
+		opacity: .21;
+	}
+	.cuadro1{
+  		/*animation: rotate 8s normal linear infinite;*/
+  		transform: rotate(45deg);
+	}
+	.cuadro2{
+		/*animation: rotate2 8s normal linear infinite;*/
+	}
+
+	
+	.kaleidos_div button{
+		position: absolute;
+		background-color: transparent;
+		top: 45%;
+		width: 10%;
+		border: none;
+		transition: all .3s ease;
+		cursor: pointer;
+	}
+	.kaleidos_div button:hover{
+		transform: scale(1.1);
+	}
+	.kaleidos_div button img{
+		width: 100%;
+		transition: all 2s ease;
+	}
+	.k_btn_prev{
+		left: -20%;
+	}
+	.k_btn_next{
+		right: -20%;
+	}
+	
+	
+	.ciclo_aux{
+		position: absolute;
+		width: 100px;
+		height: 50px;
+		visibility: hidden;
+	}
+	.ciclo_aux_fibra{
+		top: 30%;
+		background-color: var(--lima);
+	}
+	.ciclo_aux_dis{
+		top: 40%;
+		background-color: var(--verde);
+	}
+
+	.ciclo_aux_manufactura{
+		top: 50%;
+		background-color: #eaeaea;
+	}
+	.ciclo_aux_logistica{
+		top: 60%;
+		background-color: mediumpurple;
+	}
+
+	.ciclo_aux_uso{
+		top: 70%;
+		background-color: dodgerblue;
+	}
+	.ciclo_aux_nuevavida{
+		top: 80%;
+		background-color: var(--naranja);
+	}
+
+	.k_rotor{
+		width: 104%;
+		height: 104%;
+		border-radius: 100%;
+		position: absolute;
+		top: -2%;
+		left: -2%;
+	}
+	.k_rotor textPath{
+		cursor: pointer;
+		color: red;
+	}
+	.k_rotor svg{
+		position: absolute;
+		/*background-color: cyan;*/
+		z-index: -200 !important;
+	}
+	.rotor_aux_div{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		/*border: solid red;*/
+		transition: all 2s ease;
+	}
+	.rotor_aux{
+		position: absolute;
+		height: 70px;
+		cursor: pointer;
+		/*border: 1px solid cyan;*/
+		z-index: 1000 !important;
+	}
+	
+	.rotor_aux1{
+		top: 11%;
+		left: 3%;
+		width: 45%;
+		transform-origin: top left;
+		transform: rotate(-30deg);
+	}
+	.rotor_aux2{
+		top: -5%;
+		left: 70%;
+		width: 15%;
+		transform-origin: top left;
+		transform: rotate(30deg);
+	}
+	.rotor_aux3{
+		top: 34%;
+		left: 107%;
+		width: 28%;
+		transform-origin: top left;
+		transform: rotate(90deg);
+	}
+	.rotor_aux4{
+		top: 92%;
+		left: 68.5%;
+		width: 20%;
+		transform-origin: top left;
+		transform: rotate(-35deg);
+	}
+	.rotor_aux5{
+		top: 78.5%;
+		left: 9.5%;
+		width: 41%;
+		transform-origin: top left;
+		transform: rotate(30deg);
+	}
+	.rotor_aux6{
+		top: 43.5%;
+		left: 5.5%;
+		width: 22.5%;
+		transform-origin: top left;
+		transform: rotate(90deg);
+	}
+
+	.rotor1{
+		position: absolute;
+		transform: rotate(5deg) translate(-50px,-70px);
+	}
+	.rotor1 textPath{
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: .8rem;
+	}
+	.rotor2{
+		position: absolute;
+		transform: rotate(76deg) translate(-50px,-70px);
+	}
+	.rotor2 textPath{
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: .8rem;
+	}
+	.rotor3{
+		position: absolute;
+		transform: rotate(130deg) translate(-50px,-70px);
+	}
+	.rotor3 textPath{
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: .8rem;
+	}
+	.rotor4{
+		position: absolute;
+		transform: rotate(190deg) translate(-50px,-70px);
+	}
+	.rotor4 textPath{
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: .8rem;
+	}
+	.rotor5{
+		position: absolute;
+		transform: rotate(245deg) translate(-50px,-70px);
+	}
+	.rotor5 textPath{
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: .8rem;
+	}
+	.rotor6{
+		position: absolute;
+		transform: rotate(310deg) translate(-50px,-70px);
+	}
+	.rotor6 textPath{
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: .8rem;
+	}
+
+
+	.k_rotor, .rotor_aux_div{
+		transition: all 2s ease;
+		transform: rotate(30deg);
+	}
+
+	
