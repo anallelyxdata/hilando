@@ -654,7 +654,7 @@
 		height: 50px;
 		z-index: 2000;
 		left: 10px;
-		/*visibility: hidden !important;*/
+		visibility: hidden !important;
 	}
 	.portadaAux{
 		visibility: hidden;
@@ -822,7 +822,7 @@
 		/*transition: all 1.5s ease;*/
 	}
 	.intro4_gota{
-		border: solid lavender;
+		/*border: solid lavender;*/
 		width: 42vh;
 		left: 40%;
 		height: 100vh;
