@@ -1,4 +1,88 @@
 .section_produccion{
+	background-image: url('/img/portada/textura_1.png');
 	background-color: var(--verde);
-	height: 100vh;
+	overflow: hidden;
 }
+/* Mano */
+	.produccion1{
+		height: 100vh;
+		position: relative;
+		border: solid palegoldenrod;
+	}
+	.produccion1_texto{
+		color: #fff;
+		width: 32%;
+		position: relative;
+		top: 25%;
+		left: 32%;
+	}
+	.produccion1_texto_h2{
+		width: 40%;
+		font-size: 3rem;
+		margin-bottom: 1.5rem;
+	}
+	.produccion1_texto_h2 span{
+		color: var(--peach);
+	}
+	.produccion1_texto_p{
+		font-family: 'FilsonProRegular', sans-serif;
+		font-size: 1rem;
+		line-height: 1.4;
+	}
+	.produccion-mano{
+		position: absolute;
+		top: 0;
+		left: 0;
+		/*border: solid;*/
+		width: 35%;
+		height: 100%;
+	}
+	.produccion1_img{
+		position: absolute;
+	}
+	.produccion1_img_mano{
+		width: 100%;
+		top: 10%;
+		z-index: 10;
+	}
+	.produccion1_img_wraist{
+		width: 13%;
+		top: 20.5%;
+		left: 41%;
+		z-index: 20;
+	}
+	.produccion1_img_vertical{
+		top: 25%;
+		left: 66%;
+		height: 75%;
+	}
+
+	.produccion1_fondo{
+		position: absolute;
+		top: -15%;
+		left: 30%;
+		right: 0;
+		width: 120%;
+		z-index: 0;
+	}
+
+/* Grafica */
+	.produccion2{
+		height: 100vh;
+		position: relative;
+	}
+	.produccion2_texto{
+		position: relative;
+		color: #fff;
+		margin: 6% 15%;
+	}
+	.produccion2_texto_h3{
+		color: var(--lima);
+		margin-bottom: 1.2rem;
+		font-family: 'FilsonProBold';
+		font-size: 1.3rem;
+	}
+	.produccion2_texto_p{
+		width: 65%;
+		line-height: 1.3;
+	}
