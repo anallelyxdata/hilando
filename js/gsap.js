@@ -73,18 +73,6 @@ const portada = gsap.timeline({
     left:'80%',
   }, '<');
 
-
-const portadaT = gsap.timeline({
-  scrollTrigger: {
-    trigger: '.portada_aux',  
-    start: 'top center',  
-    end: '.portada_aux_ropa_sale top',      
-    scrub: true,    
-    markers: false, 
-  },
-});
-
-
 const portada2 = gsap.timeline({
   scrollTrigger: {
     trigger: '.portada_pregunta_sticky',  
@@ -180,22 +168,11 @@ const timeline = gsap.timeline({
     top: '0',
   });   
 
-// Create a GSAP timeline with the animation
-const timeline_ropa = gsap.timeline({
-  scrollTrigger: {
-    trigger: '#intro_salida_ropa',  
-    start: 'top center',  
-    end: 'bottom top',   
-    scrub: true,    
-    markers: false, 
-  },
-});
-
 // Primer animación con ballena
 const timeline01 = gsap.timeline({
   scrollTrigger: {
     trigger: '.intro01',  
-    start: 'top center',  
+    start: 'bottom center',  
     end: 'bottom 15%',   
     scrub: true,    
     markers: false, 

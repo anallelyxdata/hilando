@@ -8,7 +8,7 @@
 		height: 1000vh;
 		/*border: solid;*/
 		background-color: var(--verde);
-		background-image: url('/img/portada/textura_1.png');
+		background-image: url('../img/portada/textura_1.png');
 		background-attachment: fixed;
 		background-size: 100%;
 		transition: all 2s ease;
@@ -267,6 +267,9 @@
 	}
 	#textpath-fibra{
 		opacity: 1;
+	}
+	.k_rotor_med{
+		visibility: hidden;
 	}
 	.k_rotor svg{
 		position: absolute;

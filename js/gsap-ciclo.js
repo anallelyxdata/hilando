@@ -87,7 +87,7 @@ const ciclofibra = gsap.timeline({
 	ciclofibra.to('#cuadro1, #cuadro2', {
 		visibility:'visible',
 	}, '<');
-	ciclofibra.to('#k_rotor,#rotor_aux_div', {
+	ciclofibra.to('#k_rotor,#rotor_aux_div,#k_rotor_med', {
 		rotate: '30deg',
 	},'<');
 
@@ -172,7 +172,7 @@ const ciclodis = gsap.timeline({
 	ciclodis.to('#cuadro1, #cuadro2', {
 		visibility:'hidden'
 	}, '<');
-	ciclodis.to('#k_rotor,#rotor_aux_div', {
+	ciclodis.to('#k_rotor,#rotor_aux_div,#k_rotor_med', {
 		rotate: '-30deg',
 	},'<');
 	
@@ -247,7 +247,7 @@ const ciclomanufactura = gsap.timeline({
 		left:'7%',
 	}, '<');
 	
-	ciclomanufactura.to('#k_rotor,#rotor_aux_div', {
+	ciclomanufactura.to('#k_rotor,#rotor_aux_div,#k_rotor_med', {
 		rotate: '-88deg',
 	},'<');
 
@@ -316,7 +316,7 @@ const ciclologistica = gsap.timeline({
 	ciclologistica.to('#k_circle_4', {
 		opacity:'0'
 	}, '<');
-	ciclologistica.to('#k_rotor,#rotor_aux_div', {
+	ciclologistica.to('#k_rotor,#rotor_aux_div,#k_rotor_med', {
 		rotate: '-142deg',
 	},'<');
 
@@ -390,7 +390,7 @@ const ciclouso = gsap.timeline({
 	    visibility: 'visible',
 	    borderColor: 'rgba(44, 76, 81,.36)',
 	}, '<');
-	ciclouso.to('#k_rotor,#rotor_aux_div', {
+	ciclouso.to('#k_rotor,#rotor_aux_div,#k_rotor_med', {
 		rotate: '-210deg',
 	},'<');
 
@@ -464,6 +464,6 @@ const ciclonuevavida = gsap.timeline({
 	    visibility: 'visible',
 	    borderColor: 'rgba(44, 76, 81)',
 	}, '<');
-	ciclonuevavida.to('#k_rotor,#rotor_aux_div', {
+	ciclonuevavida.to('#k_rotor,#rotor_aux_div,#k_rotor_med', {
 		rotate: '-265deg',
 	},'<');

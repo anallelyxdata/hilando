@@ -79,6 +79,199 @@
 	body{
 		border: solid hotpink;
 	}
+	/* Portada */
+		.portada{
+			min-height: unset;
+		}
+		.portada_titulo_letra{
+			height: 80%;
+		}
+		.portada_h1{
+			padding-top: .5rem;
+			font-size: 1.2rem;
+		}
+
+		.portada_ropa{
+			border: solid;
+			width: 55vw;
+			height: 33vw;
+			left: 22.5vw;
+		}
+		.portada_lentes{
+			top: -27.5%;
+			left: 33.9%;
+		}
+		.portada_falda1{
+			left: 14%;
+		}
+		.portada_falda2{
+			left: 13.7%;
+		}
+		.portada_falda3{
+			left: 5%;
+		}
+		.portada_falda4{
+			left: 4.3%;
+		}
+		.portada_falda5{
+			left: -15.5%;
+		}
+		.portada_falda6{
+			left: -27%;
+		}
+		.portada_falda7{
+			left: -26%;
+		}
+		.portada_pregunta_centro h2{
+			margin-top: 2rem;
+		}
+		.portada_pregunta_centro p{
+			font-size: .7rem;
+		}
+		.portada_bloqueAzul{
+			height: 3.5rem;
+			top: 0;
+			column-gap: 1.5rem;
+			font-size: .7rem;
+		}
+		.portada_bloqueAzul_icons img{
+			width: 10px;
+		}
+		.portada_aux{
+			top: 10%;
+		}
+		.portada_aux_ropa_sale{
+			height: 50vh;
+			top: 100%;
+		}
+
+	/* Intro */
+		.intro01{
+			top: 5%;
+		}
+		.intro1_texto{
+			width: 70%;
+			font-size: .8rem;
+		}
+		.intro1_texto_70{
+			font-size: 3rem;
+		}
+		.intro1_texto p{
+			padding-left: 20%;
+		}
+		.intro3_texto{
+			font-size: 1rem;
+		}
+		.intro3_texto p span{
+			font-size: 3rem;
+		}
+		.intro4 p{
+			font-size: .9rem;
+		}
+		.intro4 p span{
+			font-size: 2.5rem;
+		}
+		.intro5_texto{
+			/*top: 85%;*/
+			font-size: 1rem;
+		}
+		.intro5_texto{
+			font-size: 1rem;
+			transform: translateY(-30px);
+		}
+		.intro5_texto span{
+			font-size: 3rem;
+		}
+		.intro52_texto{
+			width: 60%;
+		}
+		.intro52_inicio{
+			font-size: 1rem;
+		}
+		.intro52_impacto{
+			font-size: 2.5rem;
+			padding: 1.5rem 0;
+		}
+		.intro52_huella{
+			font-size: .9rem;
+		}
+
+	/* Ciclo */
+		.ciclo_titulo{
+			padding: 1.5% 0 5px;
+		}
+		.ciclo_titulo h2{
+			font-size: 2.2rem;
+		}
+		.ciclo_titulo p{
+			font-size: .8rem;
+		}
+		.ciclo_p{
+			font-size: .8rem;
+			margin-top: 2.5rem;
+		}
+		.kaleidos_div{
+			width: 350px;
+			height: 350px;
+		}
+		.k_rotor{
+			visibility: hidden;
+		}
+		.k_rotor_med{
+			transform-origin: center;
+			visibility: visible;
+			width: 104%;
+			height: 104%;
+			border-radius: 100%;
+			position: absolute;
+			top: -2%;
+			left: -2%;
+			transform: rotate(30deg);
+			transition: all 2s ease;
+		}
+		.k_rotor_med textPath{
+			cursor: pointer;
+			opacity: .25;
+			transition: all 1s ease;
+		}
+		.rotor1{
+			position: absolute;
+			transform: rotate(0) translate(-60px,-60px);
+		}
+		
+		.rotor_aux{
+			height: 40px;
+		}
+		.rotor_aux1{
+			top: 14%;
+			left: -8%;
+			width: 55%;
+		}
+		.rotor_aux2{
+			top: -10%;
+			left: 70%;
+			width: 20%;
+		}
+		.rotor_aux3{
+			top: 32%;
+			left: 111%;
+			width: 35%;
+		}
+		.rotor_aux4{
+			top: 97%;
+			left: 69%;
+			width: 24%;
+		}
+		.rotor_aux5{
+			top: 78%;
+			left: 0%;
+			width: 54%;
+		}
+		.rotor_aux6{
+			top: 39.5%;
+			left: 0%;
+			width: 28%;
+		}
 }
 
 
