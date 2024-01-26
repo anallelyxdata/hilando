@@ -1,9 +1,83 @@
 
 /*// X-Large devices (large desktops, 1200px and up)*/
-@media (max-width: 1200px) { 
+@media (max-width: 1700px) { 
+	body{
+		border: solid blue;
+	}
 
-	.portada{
-		max-height: 600px;
+	/* Portada */
+		.portada_ropa{
+			border: solid;
+		}
+		.portada_lentes{
+			top: -27.5%;
+		}
+		.portada_chaleco{
+			bottom: 3.9%;
+		}
+		.portada_falda1{
+			top: 39.5%;
+		}
+		.portada_falda2{
+			top: 8%;
+		}
+		.portada_falda3{
+			top: -4.5%;
+		}
+		.portada_falda4{
+			top: 25.5%;
+		}
+		.portada_falda5{
+			top: 22.5%;
+		}
+		.portada_falda6{
+			top: 29.9%;
+		}
+		.portada_falda7{
+			top: 37%;
+		}
+		.portada_pregunta_centro h2{
+			font-size: 3rem;
+			margin-top: 2rem;
+		}
+		.portada_pregunta_centro p{
+			font-size: .8rem;
+		}
+		.portada_pregunta_sticky{
+		}
+		
+	/*Intro*/
+		.intro1_planeta_arriba{
+			left: 7%;
+		}
+		.intro1_texto, .intro3_texto, .intro4 p{
+			font-size: 1.1rem;
+		}
+		.intro1_texto_70{
+			font-size: 3.5rem;
+		}
+		.intro4 p span{
+			font-size: 3rem;
+		}
+		.intro3_texto p span{
+			font-size: 3.5rem;
+		}
+		.intro4_30{
+			width: 55%;
+		}
+		.intro5_texto{
+			top: 85%;
+			font-size: 1.1rem;
+		}
+		.intro52_texto{
+			width: 50%;
+		}
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (max-width: 1400px) { 
+	body{
+		border: solid hotpink;
 	}
 }
 

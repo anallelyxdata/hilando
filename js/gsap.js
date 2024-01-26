@@ -94,7 +94,7 @@ const portada2 = gsap.timeline({
     markers: false, 
   },
 });
-// Add animations to the timeline
+// Portada 2
   portada2.to('.portada_pregunta_sticky', {
     position:'fixed',
     top:'15%',
@@ -109,7 +109,7 @@ const portada3 = gsap.timeline({
     markers: false, 
   },
 });
-// ropa sale
+// Portada 3
   
   portada3.to('.portada_escondida_tenis1', {
     bottom: '-580%',
@@ -172,14 +172,13 @@ const timeline = gsap.timeline({
     markers: false, 
   },
 });
-
-// Add animations to the timeline
-timeline.to('#gota1', {
-  scale: 90,
-});   
-timeline.to('.intro1_centro', {
-  top: '0',
-});   
+// aux salida
+  timeline.to('#gota1', {
+    scale: 90,
+  });   
+  timeline.to('.intro1_centro', {
+    top: '0',
+  });   
 
 // Create a GSAP timeline with the animation
 const timeline_ropa = gsap.timeline({
@@ -192,64 +191,60 @@ const timeline_ropa = gsap.timeline({
   },
 });
 
-// timeline_ropa.to('.portada_escondida_lentes2', {
-//   scale: 8
-// }, '<');
-
-
 // Primer animación con ballena
 const timeline01 = gsap.timeline({
   scrollTrigger: {
     trigger: '.intro01',  
     start: 'top center',  
-    end: 'bottom center',   
+    end: 'bottom 15%',   
     scrub: true,    
     markers: false, 
   },
 });
-timeline01.to('.intro1_nuestroplaneta', {
-    top: '8%',
-    left: '-50%',
-})
-timeline01.to('.portada_pregunta_sticky', {
-    visibility:'hidden'
-  });
-timeline01.to('.portada_escondida_tenis1', {
-    display:'none',
+// Intro 01
+  timeline01.to('.intro1_nuestroplaneta', {
+      top: '8%',
+      left: '-50%',
   })
-  timeline01.to('.portada_escondida_pulsera', {
-   display:'none',
-  }, '<')
-  timeline01.to('.portada_escondida_chamarra1', {
+  timeline01.to('.portada_pregunta_sticky', {
+      visibility:'hidden'
+    });
+  timeline01.to('.portada_escondida_tenis1', {
+      display:'none',
+    })
+    timeline01.to('.portada_escondida_pulsera', {
+     display:'none',
+    }, '<')
+    timeline01.to('.portada_escondida_chamarra1', {
+      display:'none',
+    }, '<');
+    timeline01.to('.portada_escondida_lentes', {
+      display:'none',
+    }, '<');
+    timeline01.to('.portada_escondida_tenis2', {
     display:'none',
-  }, '<');
-  timeline01.to('.portada_escondida_lentes', {
-    display:'none',
-  }, '<');
-  timeline01.to('.portada_escondida_tenis2', {
+    }, '<');
+    timeline01.to('.portada_escondida_jeans2', {
+      display:'none',
+    }, '<');
+    timeline01.to('.portada_escondida_lentes2', {
+      display:'none',
+    }, '<');
+    timeline01.to('.portada_escondida_jeans21', {
+      display:'none',
+    }, '<');
+    timeline01.to('.portada_escondida_pulsera2', {
+      display:'none',
+    }, '<');
+    timeline01.to('.portada_escondida_tenis11', {
   display:'none',
-  }, '<');
-  timeline01.to('.portada_escondida_jeans2', {
-    display:'none',
-  }, '<');
-  timeline01.to('.portada_escondida_lentes2', {
-    display:'none',
-  }, '<');
-  timeline01.to('.portada_escondida_jeans21', {
-    display:'none',
-  }, '<');
-  timeline01.to('.portada_escondida_pulsera2', {
-    display:'none',
-  }, '<');
-  timeline01.to('.portada_escondida_tenis11', {
-display:'none',
-  }, '<');
-  timeline01.to('.portada_escondida_chamarra11', {
-display:'none',
-  }, '<');
-  timeline01.to('.portada_escondida_ropa1', {
-display:'none',
-  }, '<');
+    }, '<');
+    timeline01.to('.portada_escondida_chamarra11', {
+  display:'none',
+    }, '<');
+    timeline01.to('.portada_escondida_ropa1', {
+  display:'none',
+    }, '<');
 
 const timeline02 = gsap.timeline({
   scrollTrigger: {
@@ -260,13 +255,14 @@ const timeline02 = gsap.timeline({
     markers: false, // Display markers for debugging (optional)
   },
 });
-timeline02.to('#planeta1_gota', {
-    top:'20%',
-    visibility:'hidden'
-});
-timeline02.to('#planeta1_arriba', {
-    rotate: 0,
-})
+// Intro 02
+  timeline02.to('#planeta1_gota', {
+      top:'20%',
+      visibility:'hidden'
+  });
+  timeline02.to('#planeta1_arriba', {
+      rotate: 0,
+  })
 
 
 const timeline03 = gsap.timeline({
@@ -278,29 +274,30 @@ const timeline03 = gsap.timeline({
     markers: false, // Display markers for debugging (optional)
   },
 });
-timeline03.to('#planeta1_ballena', {
-    top:'24%',
-    right:'-4%',
-});
-timeline03.to('#planeta1_gota', {
-    visibility:'visible'
-});
-
-const timeline04 = gsap.timeline({
-    scrollTrigger: {
-      trigger: '.intro04',  
-      start: 'top center',  
-      end: 'bottom 15%',   
-      scrub: true,    
-      markers: false, // Display markers for debugging (optional)
-    },
+// Intro 03
+  timeline03.to('#planeta1_ballena', {
+      top:'24vh',
+      right:'-4%',
+  });
+  timeline03.to('#planeta1_gota', {
+      visibility:'visible'
   });
 
-timeline04.to('#planeta1_gota', {
-    top:'50%',
-    right:'-50%',
-    // zIndex:'20'
+const timeline04 = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.intro04',  
+    start: 'top center',  
+    end: 'bottom 15%',   
+    scrub: true,    
+    markers: false, // Display markers for debugging (optional)
+  },
 });
+// Intro 04
+  timeline04.to('#planeta1_gota', {
+      top:'50vh',
+      right:'-50%',
+      // zIndex:'20'
+  });
 
 const timeline05 = gsap.timeline({
   scrollTrigger: {
@@ -311,10 +308,10 @@ const timeline05 = gsap.timeline({
     markers: false, // Display markers for debugging (optional)
   },
 });
-
-timeline05.to('.intro1_texto', {
-  left:'-75%',
-});
+// Intro 05
+  timeline05.to('.intro1_texto', {
+    left:'-75%',
+  });
 
 const timeline06 = gsap.timeline({
   scrollTrigger: {
@@ -325,24 +322,24 @@ const timeline06 = gsap.timeline({
     markers: false, // Display markers for debugging (optional)
   },
 });
+// Intro 06
+  timeline06.to('#planeta1_arriba', {
+      top:'-80%'
+  }, '<');
 
-timeline06.to('#planeta1_arriba', {
-    top:'-80%'
-}, '<');
+  timeline06.to('#planeta1_ballena', {
+      top:'45vh',
+      right:'10%'
+  }, '<');
 
-timeline06.to('#planeta1_ballena', {
-    top:'45%',
-    right:'10%'
-}, '<');
+  timeline06.to('.intro1_nuestroplaneta', {
+      top: '-80%',
+      left: '-50%',
+  }, '<')
 
-timeline06.to('.intro1_nuestroplaneta', {
-    top: '-80%',
-    left: '-50%',
-}, '<')
-
-timeline06.to('.intro1_texto', {
-  left:'10%',
-}, '<');
+  timeline06.to('.intro1_texto', {
+    left:'10%',
+  }, '<');
 
 const timeline07 = gsap.timeline({
   scrollTrigger: {
@@ -353,28 +350,27 @@ const timeline07 = gsap.timeline({
     markers: false, // Display markers for debugging (optional)
   },
 });
+// Intro 07
+  timeline07.to('#gota1', {
+      attr: { src: './img/intro/gota_azul.svg' }
+  });
 
+  timeline07.to('.intro1_nuestroplaneta', {
+      display: 'none'
+  });
 
-timeline07.to('#gota1', {
-    attr: { src: './img/intro/gota_azul.svg' }
-});
+  timeline07.to('.intro1_texto', {
+      display: 'none'
+  });
+  timeline07.to('#planeta1_gota', {
+      top: '20vh',
+      scale:5, 
+      transformOrigin:'center'
+  });
 
-timeline07.to('.intro1_nuestroplaneta', {
-    display: 'none'
-});
-
-timeline07.to('.intro1_texto', {
-    display: 'none'
-});
-timeline07.to('#planeta1_gota', {
-    top: '20%',
-    scale:5, 
-    transformOrigin:'center'
-});
-
-timeline07.to('.div_planeta1_abajo', {
-    scale: 1.8,
-}, '<');
+  timeline07.to('.div_planeta1_abajo', {
+      scale: 1.6,
+  }, '<');
 
 
 const timeline2 = gsap.timeline({
@@ -386,30 +382,27 @@ const timeline2 = gsap.timeline({
     markers: false, // Display markers for debugging (optional)
   },
 });
-timeline2.to('.div_planeta1_abajo', {
-   zIndex:2000
-});
-timeline2.to('#planeta1_gota', {
-    top: '20%',
-    scale:1, 
-    transformOrigin:'center'
-}, '<');
-timeline2.to('.div_planeta1_abajo', {
-    top: '10%',
-    scale: 1
-}, '<');
-timeline2.to('#planeta1_gota', {
-    top: '20%',
-    scale:75, 
-    transformOrigin:'center'
-}, '<');
-timeline2.to('.intro1', {
-    backgroundColor:'var(--lima)'
-}, '<');
-timeline2.to('.intro1', {
-    backgroundImage:'url("./img/intro/textura-planeta2x.png")',
-    backgroundSize:'100%'
-}, '<');
+// Intro 2
+  timeline2.to('.div_planeta1_abajo', {
+     zIndex:2000
+  });
+
+  timeline2.to('.div_planeta1_abajo', {
+      top: '38vh',
+      scale: 1
+  }, '<');
+  timeline2.to('#planeta1_gota', {
+      top: '20vh',
+      scale:75, 
+      transformOrigin:'center'
+  }, '<');
+  timeline2.to('.intro1', {
+      backgroundColor:'var(--lima)'
+  }, '<');
+  timeline2.to('.intro1', {
+      backgroundImage:'url("./img/intro/textura-planeta2x.png")',
+      backgroundSize:'100%'
+  }, '<');
 
 const timeline021 = gsap.timeline({
   scrollTrigger: {
@@ -510,16 +503,16 @@ timeline34.to('#planeta2_gota', {
     left: '75.5%'
 }, '<');
 timeline34.to('.div_planeta1_abajo', {
-    top: '-25%'
+    top: '2vh'
 }, '<');
 timeline34.to('#planeta2_gota', {
-    top: '55%'
+    top: '55vh'
 }, '<');
 timeline34.to('.intro3_texto-97', {
-    bottom: '75%'
+    bottom: '75vh'
 }, '<');
 timeline34.to('.intro3_texto-2', {
-    bottom: '43%'
+    bottom: '43vh'
 }, '<');
 
 const timeline35 = gsap.timeline({
@@ -666,7 +659,7 @@ timeline43.to('.intro4_gota3', {
 });
 timeline43.to('.intro4_04', {
    top: '75%',
-   left:'-40%',
+   left:'-42%',
 });
 
 const timeline44 = gsap.timeline({
@@ -764,7 +757,7 @@ const timeline49= gsap.timeline({
 });
 timeline49.to('.intro4_nuestroplaneta', {
   top: '20%',
-  left: '30%'
+  left: '25vw'
 });
 
 const timeline492= gsap.timeline({
