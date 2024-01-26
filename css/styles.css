@@ -654,10 +654,10 @@
 		width: 100px;
 		height: 50px;
 		z-index: 2000;
-		/*visibility: hidden !important;*/
+		visibility: hidden !important;
 	}
 	.portadaAux{
-		/*visibility: hidden;*/
+		visibility: hidden;
 	}
 	.intro_salida_ropa{
 		background-color: mediumseagreen;
