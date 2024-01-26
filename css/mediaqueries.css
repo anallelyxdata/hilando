@@ -7,7 +7,7 @@
 
 	/* Portada */
 		.portada_ropa{
-			border: solid;
+			/*border: solid;*/
 		}
 		.portada_lentes{
 			top: -27.5%;
@@ -92,7 +92,7 @@
 		}
 
 		.portada_ropa{
-			border: solid;
+			/*border: solid;*/
 			width: 55vw;
 			height: 33vw;
 			left: 22.5vw;
@@ -211,8 +211,8 @@
 			margin-top: 2.5rem;
 		}
 		.kaleidos_div{
-			width: 350px;
-			height: 350px;
+			/*width: 350px;
+			height: 350px;*/
 		}
 		.k_rotor{
 			visibility: hidden;

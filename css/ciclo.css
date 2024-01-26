@@ -3,6 +3,7 @@
 		width: 500px;
 		height: 500px;
 		z-index: 0;
+		/*border: solid;*/
 	}
 	.section_ciclo{
 		height: 1000vh;
@@ -44,8 +45,8 @@
 	}
 	.kaleidos_div{
 		/*border: solid palegoldenrod;*/
-		width: 580px;
-		height: 580px;
+		width: 30vw;
+		height: 30vw;
 		margin: 0 auto;
 		margin-top: 8vh;
 		position: relative;
