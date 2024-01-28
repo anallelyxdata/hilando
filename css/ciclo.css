@@ -7,7 +7,6 @@
 	}
 	.section_ciclo{
 		height: 1000vh;
-		/*border: solid;*/
 		background-color: var(--verde);
 		background-image: url('../img/portada/textura_1.png');
 		background-attachment: fixed;
@@ -19,11 +18,16 @@
 		position: sticky;
 		top: 0;
 		margin-bottom: 50px;
+		/*border: solid;*/
+		height: 100vh;
 	}
 	.ciclo_titulo{
 		text-align: center;
-		padding-top: 3%;
 		color: #fff;
+		/*bordeR: solid;*/
+		position: absolute;
+		width: 100%;
+		top: 3%;
 	}
 	.ciclo_titulo h2{
 		font-family: 'FilsonProBold', sans-serif;
@@ -36,12 +40,15 @@
 		font-family: FilsonProRegular, sans-serif;
 		font-size: 1.1rem;
 		transition: all 2s ease;
-
 	}
 	.ciclo_p{
 		margin-top: 3rem;
 		text-align: center;
 		color: #fff;
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		bottom: 3%;
 	}
 	.kaleidos_div{
 		/*border: solid palegoldenrod;*/
@@ -49,7 +56,9 @@
 		height: 30vw;
 		margin: 0 auto;
 		margin-top: 8vh;
-		position: relative;
+		position: absolute;
+		bottom: calc(50vh - 17.5vw);
+		left: 35vw;
 	}
 	.k_circle_dashed{
 		position: absolute;
@@ -254,12 +263,13 @@
 	}
 
 	.k_rotor{
-		width: 104%;
-		height: 104%;
+		width: 32vw;
+		height: 32vw;
+		/*border: solid;*/
 		border-radius: 100%;
 		position: absolute;
-		top: -2%;
-		left: -2%;
+		top: -1vw;
+		left: -1vw;
 	}
 	.k_rotor textPath{
 		cursor: pointer;
@@ -270,7 +280,7 @@
 		opacity: 1;
 	}
 	.k_rotor_med{
-		visibility: hidden;
+		display: none;
 	}
 	.k_rotor svg{
 		position: absolute;
@@ -287,7 +297,7 @@
 	}
 	.rotor_aux{
 		position: absolute;
-		height: 70px;
+		height: 4vw;
 		cursor: pointer;
 		/*border: 1px solid cyan;*/
 		z-index: 1000 !important;
@@ -301,9 +311,9 @@
 		transform: rotate(-30deg);
 	}
 	.rotor_aux2{
-		top: -5%;
-		left: 70%;
-		width: 15%;
+		top: -3.5vw;
+		left: 21vw;
+		width: 6vw;
 		transform-origin: top left;
 		transform: rotate(30deg);
 	}

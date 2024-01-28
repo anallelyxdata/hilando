@@ -72,6 +72,41 @@
 		.intro52_texto{
 			width: 50%;
 		}
+
+	/* Ciclo */
+		.rotor_aux{
+			height: 3vw;
+		}
+		.rotor_aux1{
+			top: 9.5%;
+			left: -4%;
+			width: 55%;
+		}
+		.rotor_aux2{
+			top: -11%;
+			left: 72%;
+			width: 20%;
+		}
+		.rotor_aux3{
+			top: 32%;
+			left: 113%;
+			width: 35%;
+		}
+		.rotor_aux4{
+			top: 101%;
+			left: 71%;
+			width: 24%;
+		}
+		.rotor_aux5{
+			top: 81%;
+			left: -2%;
+			width: 54%;
+		}
+		.rotor_aux6{
+			top: 39.5%;
+			left: -2%;
+			width: 28%;
+		}
 }
 
 /*// Large devices (desktops, 992px and up)*/
@@ -214,18 +249,27 @@
 			/*width: 350px;
 			height: 350px;*/
 		}
+		/*.k_rotor{
+			width: 30vw;
+			height: 30vw;
+			border: solid;
+			border-radius: 100%;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+		}*/
 		.k_rotor{
-			visibility: hidden;
+			display: none;
 		}
 		.k_rotor_med{
 			transform-origin: center;
-			visibility: visible;
-			width: 104%;
-			height: 104%;
+			display: block;
+			width: 31vw;
+			height: 31vw;
 			border-radius: 100%;
 			position: absolute;
-			top: -2%;
-			left: -2%;
+			top: -.5vw;
+			left: -.5vw;
 			transform: rotate(30deg);
 			transition: all 2s ease;
 		}
@@ -233,6 +277,7 @@
 			cursor: pointer;
 			opacity: .25;
 			transition: all 1s ease;
+			font-size: .7rem;
 		}
 		.rotor1{
 			position: absolute;
@@ -240,7 +285,7 @@
 		}
 		
 		.rotor_aux{
-			height: 40px;
+			height: 3vw;
 		}
 		.rotor_aux1{
 			top: 14%;
@@ -277,6 +322,9 @@
 
 /*// Large devices (desktops, 992px and up)*/
 @media (max-width: 992px) { 
+	body{
+		/*border: solid yellow;*/
+	}
 	.portada{
 		min-height: 450px;
 		max-height: 450px;
@@ -285,7 +333,10 @@
 
 
 /*// Medium devices (tablets, 768px and up)*/
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
+	body{
+		/*border: solid purple;*/
+	} 
 	.portada{
 		min-height: 300px;
 		max-height: 350px;
