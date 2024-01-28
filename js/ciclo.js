@@ -32,7 +32,6 @@ document.getElementById("aux-fibra").addEventListener("click", function() {
       var targetScrollPositionFibra = document.getElementById("ciclo_aux_fibra").getBoundingClientRect().top + window.scrollY + offsetFibra;
 
       window.scrollTo({ top: targetScrollPositionFibra, behavior: 'smooth' });
-      alert('fibra')
    
 });
 
@@ -57,7 +56,6 @@ document.getElementById("aux-dis").addEventListener("click", function() {
       var targetScrollPositionDis = document.getElementById("ciclo_aux_dis").getBoundingClientRect().top + window.scrollY + offsetDis;
 
       window.scrollTo({ top: targetScrollPositionDis, behavior: 'smooth' });
-      alert('dis')
 
 
 });
@@ -79,7 +77,6 @@ document.getElementById("aux-manufactura").addEventListener("click", function() 
 
     window.scrollTo({ top: targetScrollPositionMan, behavior: 'smooth' });
 
-      alert('man')
 
 });
 
@@ -99,7 +96,6 @@ document.getElementById("aux-logistica").addEventListener("click", function() {
 
     window.scrollTo({ top: targetScrollPositionLogistica, behavior: 'smooth' });
 
-      alert('log')
    
 });
 
@@ -121,7 +117,6 @@ document.getElementById("aux-uso").addEventListener("click", function() {
     window.scrollTo({ top: targetScrollPositionUso, behavior: 'smooth' });
 
 
-      alert('uso')
     
 });
 
@@ -142,7 +137,6 @@ document.getElementById("aux-nuevavida").addEventListener("click", function() {
 
     window.scrollTo({ top: targetScrollPositionNuevaVida, behavior: 'smooth' });
 
-      alert('nv')
 
    
 });
