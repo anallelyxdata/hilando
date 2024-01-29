@@ -1,0 +1,71 @@
+/* AXES */
+/* ticks */
+.svg-container{
+	border: solid palegoldenrod;
+}
+.axis:nth-child(4) line{
+	stroke: #fff;
+	stroke-width: 1;
+	shape-rendering: crispEdges;
+	transform: translateX(-3px);
+}
+.axis:nth-child(3) line{
+	stroke: #fff;
+	stroke-width: 1;
+	shape-rendering: crispEdges;
+	stroke-width: 0.25;
+	stroke-dasharray: 8;
+}
+
+/* axis contour */
+.axis:nth-child(4) path {
+stroke: #fff;
+stroke-width: 0.25;
+stroke-dasharray: 8;
+shape-rendering: crispEdges;
+}
+.axis:nth-child(3) path {
+stroke: #fff;
+stroke-width: 0.1;
+}
+
+/* axis text */
+.axis text {
+fill: #fff;
+font-family: FilsonProRegular, sans-serif;
+font-size: 100%;
+}
+
+/* LINE CHART */
+path.line-0 {
+fill: none;
+stroke: #de7e57;
+stroke-dasharray: 20;
+stroke-width: 3;
+}
+
+path.line-1 {
+fill: none;
+stroke: #d3eb6b;
+stroke-dasharray: 20;
+stroke-width: 3;
+}
+
+path.line-2 {
+fill: none;
+stroke: #9c9c9c;
+stroke-dasharray: 6;
+}
+
+/* TOOLTIP */
+.tooltip {
+	color: #fff;
+	font-family: FilsonProRegular, sans-serif;
+	font-size: 90%;
+}
+
+/* POINTS */
+.point {
+	stroke: none;
+	fill: #9c9c9c;
+}

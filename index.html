@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="./css/kaleidoscope.css">
 	<link rel="stylesheet" href="./css/ciclo.css">
 	<link rel="stylesheet" href="./css/produccion.css">
+	<link rel="stylesheet" href="./css/stylesLine.css">
 	<link rel="stylesheet" href="./css/animation.css">
 	<link rel="stylesheet" href="./css/mediaqueries.css">
 
@@ -409,6 +410,20 @@
 					<h3 class="produccion2_texto_h3">Ha llegado el momento...</h3>
 					<p class="produccion2_texto_p">Las fibras se clasifican según su origenes como fibras artificiales, fibras sinteticas y fibras naturales. En esta visualización muestra su producción.</p>
 				</div>
+				<div class="produccion_grafica">
+					<div id="produccion_container_grafica" class="svg_produccion_container">
+						<div class="produccion_grafica_leyendas">
+							<div class="produccion_leyendas_div natural">
+								<div class="produccion-dot"></div>
+								<p>Fibras naturales</p>
+							</div>
+							<div class="produccion_leyendas_div artificial">
+								<div class="produccion-dot"></div>
+								<p>Fibras artificiales</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
@@ -420,7 +435,8 @@
 		<script src="./js/gsap.js"></script>
 		<script src="./js/index.js"></script>
 		<script src="./js/gsap-ciclo.js"></script>
-
 		<script src="./js/ciclo.js"></script>
+	    <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+		<script src="./js/produccion-grafica.js"></script>
 	</body>
 	</html>
