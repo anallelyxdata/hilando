@@ -107,6 +107,14 @@
 			left: -2%;
 			width: 28%;
 		}
+
+	/* Producción */
+		.produccion1_texto{
+			top: 30%;
+		}
+		.produccion1_texto_p{
+			font-size: .9rem;
+		}
 }
 
 /*// Large devices (desktops, 992px and up)*/

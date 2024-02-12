@@ -9,7 +9,7 @@
 		height: 1000vh;
 		background-color: var(--verde);
 		background-image: url('../img/portada/textura_1.png');
-		background-attachment: fixed;
+		/*background-attachment: fixed;*/
 		background-size: 100%;
 		transition: all 2s ease;
 		position: relative;
@@ -233,7 +233,7 @@
 		position: absolute;
 		width: 100px;
 		height: 50px;
-		visibility: hidden;
+		/*visibility: hidden;*/
 	}
 	.ciclo_aux_fibra{
 		top: 30%;

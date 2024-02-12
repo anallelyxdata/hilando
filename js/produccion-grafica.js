@@ -32,7 +32,7 @@ svg.append("defs")
         svg.append("rect")
             .attr("width", "83.55%")
             .attr("height", "71.4%")
-            .style("opacity", ".6")
+            .style("opacity", ".5")
             .style("fill", "url(#bg-pattern)");
 
 //-----------------------------DATA-----------------------------//
@@ -110,9 +110,21 @@ const lines = svg.selectAll("lines")
 
 lines.append("path")
 .attr("class", ids)
-.attr("d", function(d) { return line(d.values); })
+// .attr("d", function(d) { return line(d.values); })
+.attr("d", function(d) { return line([]); })
 
+// Call the callback function after D3.js operation is complete
+executeGSAPAnimation();
 
+lines.selectAll("path")
+  .transition()
+  // .duration(3000) // Adjust duration as needed
+  .attrTween("d", function(d) {
+    const interpolate = d3.interpolateArray([], line(d.values));
+    return function(t) {
+      return line(d.values.slice(0, Math.floor(t * d.values.length)));
+    };
+  });
 
 //---------------------------POINTS-----------------------------// 
 lines.selectAll("points")
@@ -123,10 +135,13 @@ lines.selectAll("points")
 .attr("cy", function(d) { return yScale(d.measurement); })    
 .attr("r", 3)
 .attr("class","point")
-.style("opacity", 1)
+// .style("opacity", 1)
 .style("stroke", "#fff")
 .style("stroke-width", "2")
 .style("fill", "transparent")
+
+
+executeGSAPAnimationCircle();
 
 //---------------------------EVENTS-----------------------------// 
 lines.selectAll("circles")
@@ -137,6 +152,7 @@ lines.selectAll("circles")
 .attr("cy", function(d) { return yScale(d.measurement); })    
 .attr('r', 10)
 .style("opacity", 0)
+
 
 lines.selectAll("circles")
 .data(function(d) { return(d.values); } )
@@ -150,7 +166,9 @@ lines.selectAll("circles")
     tooltip.transition()
     .style("opacity", 1);
 
-    tooltip.html(d.measurement+" T")
+    const formatNumber = d3.format(",");
+
+    tooltip.html(formatNumber(d.measurement) + " T")
     .style("left", (d3.event.pageX - 35) + "px")
     .style("top", (d3.event.pageY - 45) + "px");
 
