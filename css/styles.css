@@ -40,6 +40,10 @@
 	  font-family: FilsonProMedium;
 	  src: url('../fonts/FilsonProMedium.otf');
 	}
+	@font-face {
+	  font-family: FilsonProBook;
+	  src: url('../fonts/FilsonProBook.otf');
+	}
 	html {
 	  /*scroll-behavior: smooth;*/
 	}
@@ -257,7 +261,7 @@
 			z-index: 25;
 		}
 		.portada_falda{
-			animation: flicker-1 2s linear infinite both;
+			/*animation: flicker-1 2s linear infinite both;*/
 		}
 		.portada_falda1{
 			width: 18%;
@@ -476,12 +480,12 @@
 		align-items: center;
 		z-index: 11;
 		padding-top: 20%;
-		/*border: solid palegoldenrod;*/
 	}
 	.portada_pregunta_sticky{
 		position: absolute;
-		top: 15%;
+		top: 25%;
 		width: 100%;
+		transition: all .5s ease;
 	}
 	.portada_pregunta-botones{
 		display: none;
@@ -491,6 +495,7 @@
 		padding: 0 2rem;
 		width: 100%;
 		justify-content: space-between;
+		font-family: FilsonProMedium, sans-serif;
 	}
 	.btn-main{
 		background-color: rgba(255, 255, 255, .5);
@@ -499,7 +504,7 @@
 		padding: 6px;
 		text-align: center;
 		font-size: .9rem;
-		font-family: FilsonProBlack, sans-serif;
+		/*font-family: FilsonProBlack, sans-serif;*/
 	}
 	.portada_pregunta_centro{
 		width: 65%;
@@ -528,6 +533,7 @@
 		font-size: .9rem;
 		letter-spacing: 1px;
 		margin-bottom: 12px;
+		color: var(--lima);
 	}
 	
 	.gota1{

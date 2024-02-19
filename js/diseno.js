@@ -14,6 +14,21 @@ gsap.to(sections, {
   }
 });
 
+document.querySelector('.dis2_button').addEventListener('mouseover', function() {
+    const revealElements = document.querySelectorAll('.dis2_revealp');
+    revealElements.forEach(function(element) {
+        element.style.opacity = '1';
+    });
+    document.querySelector('.dis2_button').style.animationName='none'
+});
+
+document.querySelector('.dis2_button').addEventListener('mouseout', function() {
+    const revealElements = document.querySelectorAll('.dis2_revealp');
+    revealElements.forEach(function(element) {
+        element.style.opacity = '0';
+    });
+    document.querySelector('.dis2_button').style.animationName='pulse-animation'
+});
 
 document.querySelector('.dis3_button').addEventListener('mouseover', function() {
     const revealElements = document.querySelectorAll('.dis3_revealp');

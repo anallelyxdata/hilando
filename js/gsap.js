@@ -85,7 +85,7 @@ const portada2 = gsap.timeline({
 // Portada 2
   portada2.to('.portada_pregunta_sticky', {
     position:'fixed',
-    top:'15%',
+    top:'25%',
   });
 
 const portada3 = gsap.timeline({

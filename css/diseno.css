@@ -3,6 +3,7 @@
 	background-color: var(--azul);
 	background-image: url('../img/fondos/textura-azul.png');
 	background-attachment: fixed;
+	position: relative;
 }
 
 /* Horizontal scrolling */
@@ -17,6 +18,7 @@
 	.panel{
 		height: 100vh;
 		width: 100vw;
+		position: relative;
 		/*border: solid pink;*/
 		/*background-color: var(--azul);*/
 		/*background-image: url('../img/fondos/textura-azul.png');*/
@@ -27,6 +29,55 @@
 	  height: 100vh;
 	  background: yellow;
 	}
+/* Aux */
+	.dis_aux{
+		position: absolute;
+		width: 50px;
+		height: 40vh;
+		left: 50%;
+		z-index: 20;
+		visibility: hidden;
+	}
+	.dis_aux01{
+		background-color: fuchsia;
+		top: 25vw;
+	}
+	.dis_aux1{
+		background-color: fuchsia;
+		top: 100vw;
+	}
+	.dis_aux2{
+		background-color: turquoise;
+		top: 150vw;
+	}
+	.dis_aux3{
+		background-color: purple;
+		top: 250vw;
+	}
+	.dis_aux4{
+		background-color: purple;
+		top: 300vw;
+	}
+	.dis_aux5{
+		background-color: purple;
+		top: 350vw;
+	}
+	.dis_aux6{
+		background-color: purple;
+		top: 400vw;
+	}
+	.dis_aux7{
+		background-color: purple;
+		top: 450vw;
+	}
+	.dis_aux8{
+		background-color: purple;
+		top: 650vw;
+	}
+	.float{
+		animation: float 2s ease-in-out infinite;
+	}
+
 
 /* Section 1 */
 	.dis1{
@@ -40,6 +91,7 @@
 		position: relative;
 		background-repeat: no-repeat;
 	}
+
 	.dis1_fondo_closet{
 		width: 100%;
 	}
@@ -49,6 +101,8 @@
 		top: 37%;
 		left: 26.65%;
 		z-index: 15;
+		transition: all 1s ease;
+		/*opacity: 0;*/
 	}
 	.dis1_foco{
 		position: absolute;
@@ -56,10 +110,13 @@
 		top: 52.5%;
 		left: 42.5%;
 		z-index: 15;
+		/*opacity: 0;*/
+		transition: all 1s ease;
 	}
 	.dis1_col2{
 		padding: 15% 12%;
 		position: relative;
+		transition: all 1s ease;
 	}
 	.dis1_necesario{
 		text-transform: uppercase;
@@ -67,15 +124,21 @@
 		font-family: 'FilsonProRegular';
 		font-size: 1.3rem;
 		letter-spacing: 1.5px;
+		/*color: transparent;*/
+		color: var(--lima);
+
 	}
 	.dis_titulo{
 		font-size: 3.8rem;
+		transition: all 1s ease;
 	}
 	.dis1_titulo{
 		color: var(--lima);
 		font-family: 'FilsonProBold';
 		width: 60%;
 		margin-top: 1rem;
+		/*color: transparent;*/
+		color: var(--lima);
 	}
 	.dis1_variedad{
 		color: #fff;
@@ -84,11 +147,16 @@
 		bottom: 10%;
 		line-height: 1.4;
 		font-size: 1.1rem;
+		color: transparent;
 	}
 
 /* Section 2 */
 	.dis2{
 		padding: 5% 10%;
+	}
+	.dis2_texto{
+		opacity: 0;
+		transition: opacity 0.5s ease;
 	}
 	.dis2_titulo{
 		color: #fff;
@@ -161,6 +229,10 @@
 		padding: 4% 5%;
 		grid-column-gap: 5%;
 		text-align: center;
+	}
+	.dis3_texto{
+		opacity: 0;
+		transition: opacity 0.5s ease;
 	}
 	.dis3_flecha{
 		margin-top: 1.5rem;
@@ -308,6 +380,10 @@
 		padding: 4% 5%;
 		grid-column-gap: 5%;
 		color: #fff;
+	}
+	.dis4_texto{
+		opacity: 0;
+		transition: opacity 0.5s ease;
 	}
 	.dis4_chamarra_div{
 		position: relative;
@@ -460,6 +536,10 @@
 		grid-column-gap: 5%;
 		color: #fff;
 	}
+	.dis5_texto{
+		opacity: 0;
+		transition: opacity 0.5s ease;
+	}
 	.dis5_titulo{
 		color: var(--lima);
 		text-align: left;
@@ -609,6 +689,10 @@
 		padding: 8% 10%;
 		color: #fff;
 	}
+	.dis6_texto{
+		opacity: 0;
+		transition: opacity 0.5s ease;
+	}
 	.dis6 p{
 		opacity: .8;
 	}
@@ -617,22 +701,143 @@
 		position: relative;
 		left: -3%;
 	}
+	.dis7_texto{
+		opacity: 0;
+		transition: opacity 0.5s ease;
+	}
+	.dis8_texto{
+		opacity: 0;
+		transition: opacity 0.5s ease;
+	}
 
 /* Hilos */
 	.dis_hilo{
 		position: absolute;
+		overflow: visible;
+	}
+	.div_svg1{
+		position: absolute;
+		width: 60%;
+		height: 50%;
+		z-index: 10;
 	}
 	.dis_hilo1{
 		z-index: 10;
-		width: 58%;
-		top: 10%;
-		left: 0;
+		width: 100%;
+		top: 30%;
+		left: 20%;
+		transform: scale(1.3);
+	}
+	.dis_hilo path {
+		transition: all 2s ease;
+	}
+	.div_svg2{
+		position: absolute;
+		left: 80%;
+		width: 30%;
+		height: 50%;
 	}
 	.dis_hilo2{
-		width: 30%;
-		top: 14%;
-		right: -7%;
+		width: 100%;
+		top: 75%;
+		left: -25%;
+		z-index: 10;
+		transform: rotate(-70deg) scale(.9);
 	}
+	.div_svg3{
+		position: absolute;
+		left: 50%;
+		width: 30%;
+		height: 100%;
+		top: 0;
+	}
+	.dis_hilo3{
+		width: 100%;
+		z-index: 10;
+		left: 25%;
+		top: 45% !important;
+		transform: rotate(-55deg) scale(1.4);
+	}
+	.div_svg4{
+		position: absolute;
+		left: 40%;
+		width: 30%;
+		height: 100%;
+		top: 2%;
+	}
+	.dis_hilo4{
+		width: 100%;
+		top: 77%;
+		left: 3%;
+		z-index: 10;
+		/*transform: rotate(-70deg) scale(.9);*/
+	}
+	.div_svg5{
+		position: absolute;
+		left: 50%;
+		width: 30%;
+		height: 80%;
+		top: 10%;
+	}
+	.dis_hilo5{
+		width: 100%;
+		top: 55%;
+		left: 88%;
+		z-index: 10;
+		transform: scale(1.4);
+	}
+	.div_svg6{
+		position: absolute;
+		left: 23%;
+		width: 30%;
+		height: 80%;
+		top: 10%;
+	}
+	.dis_hilo6{
+		width: 100%;
+		top: 55%;
+		z-index: 10;
+		transform: scale(1.1);
+	}
+	.div_svg7{
+		position: absolute;
+		left: 65%;
+		width: 30%;
+		height: 80%;
+		top: 12%;
+	}
+	.dis_hilo7{
+		width: 100%;
+		top: 55%;
+		left: 88%;
+		z-index: 10;
+		transform: scale(1.4);
+	}
+	.div_svg8{
+		position: absolute;
+		left: 27%;
+		width: 30%;
+		height: 80%;
+		top: 12%;
+	}
+	.dis_hilo8{
+		width: 100%;
+		top: 55%;
+		left: 88%;
+		z-index: 10;
+		transform: scale(1.2);
+	}
+
+	
+
+	@keyframes draw {
+	to {
+	  stroke-dashoffset: 0;
+	}
+	}
+
+	
+	
 	.dis_hilo3{
 		width: 55%;
 		top:4%;
