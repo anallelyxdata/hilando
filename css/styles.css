@@ -219,6 +219,7 @@
 	.portada_bloqueAzul_icons{
 		 animation: mover .8s infinite  alternate;
 	}
+	
 	.portada_bloqueAzul div{
 		display: flex;
 		column-gap: .8rem;

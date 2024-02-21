@@ -30,6 +30,7 @@
 	.logistica2{
 		padding: 5% 10%;
 		background-image: url('../img/fondos/textura_gris.png');
+		background-size: cover;
 		text-align: center;
 		display: flex;
 		flex-direction: column;
@@ -324,19 +325,253 @@
 		top: 44%;
 		left: 23%;
 	}
+	.linea_pin_blanco{
+		height: 2px;
+		border-top: dashed 4px var(--verde);
+		position: absolute;
+		width: 50%;
+		top: 51%;
+		left: -26%;
+	}
 	.pin_verde{
 		top: 50%;
 		left: 27%;
 	}
+	.linea_pin_verde{
+		height: 2px;
+		border-top: dashed 4px var(--verde);
+		position: absolute;
+		width: 54%;
+		top: 57.4%;
+		left: -26%;
+	}
 	.pin_lima{
 		top: 47.5%;
 		left: 76%;
+		z-index: 20;
 	}
 	.pin_azul{
 		top: 47.5%;
 		left: 75.5%;
+		z-index: 10;
+	}
+	.linea_pin_azul{
+		height: 2px;
+		border-top: dashed 4px var(--verde);
+		position: absolute;
+		width: 44%;
+		top: 54.4%;
+		right: -22%;
 	}
 	.pin_naranja{
 		top: 52%;
 		left: 70%;
+		z-index: 10;
+	}
+	.linea_pin_naranja{
+		height: 2px;
+		border-top: dashed 4px var(--verde);
+		position: absolute;
+		width: 44%;
+		top: 57%;
+		right: -17%;
+	}
+	.linea_pin_d1{
+		height: 2px;
+		border-top: dashed 4px var(--verde);
+		position: absolute;
+		width: 5%;
+		top: 57%;
+		right: 22.9%;
+		transform: rotate(-205deg);
+	}
+	.linea_pin_d2{
+		height: 2px;
+		border-top: dashed 4px var(--verde);
+		position: absolute;
+		width: 2%;
+		top: 58.2%;
+		right: 26.5%;
+		transform: rotate(-225deg);
+	}
+	.log6_barco{
+		position: absolute;
+		width: 18%;
+		top: 25%;
+		left: 1%;
+	}
+	.log6_cotas{
+		display: flex;
+		position: absolute;
+		bottom: 0%;
+		right: 10%;
+		column-gap: 2rem;
+	}
+	.log6_cotas_div{
+		display: flex;
+		align-items: center;
+		column-gap: .8rem;
+	}
+	.log6_cotas_circle{
+		width: 2.8rem;
+		height: 2.8rem;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.circle_km{
+		background-color: var(--lima);
+	}
+	.circle_energia{
+		background-color: var(--azul);
+	}
+	.circle_energia img{
+		width: 60%;
+	}
+
+	.circle_emision{
+		background-color: var(--naranja);
+	}
+	.circle_emision img{
+		width: 60%;
+	}
+	.cotas_p1{
+		font-size: .8rem;
+	}
+	.cotas_p2{
+		font-size: 1.8rem;
+	}
+
+/* Sec 8 */
+	.log8_texto{
+		position: absolute;
+		left: 22%;
+		width: 45%;
+		top: 5%;
+		line-height: 1.3;
+		font-size: 1.1rem;
+	}
+	.log8_texto h3{
+		margin-bottom: 1rem;
+	}
+	.log8_mapa{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+	}
+	.log8_mapa_mapa{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	.badge_verde2{
+		top: 26%;
+		left: 32%;
+		background-color: var(--verde);
+		color: #fff;
+		padding-right: 1.5rem;
+	}
+	.badge_azul2{
+		top: 81%;
+		left: 49%;
+		background-color: var(--azul);
+		color: #fff;
+		padding-right: 1rem;
+	}
+	.badge_lima2{
+		top: 55%;
+		left: 25%;
+		background-color: var(--lima);
+		color: var(--verde);
+		padding-right: 1.5rem;
+	}
+	.badge_naranja2{
+		top: 40%;
+		left: 53%;
+		color: #fff;
+		background-color: var(--naranja);
+		padding-right: 1.5rem;
+	}
+	.log8_auto{
+		position: absolute;
+		width:8%;
+		top: 39%;
+		left: 35%;
+		z-index: 10;
+	}
+	.pin2{
+		position: absolute;
+		width: 4%;
+		z-index: 10;
+	}
+	.pin_verde2{
+		top: 25%;
+		left: 44%;
+	}
+	.pin_lima2{
+		top: 49%;
+		left: 39%;
+	}
+	.pin_naranja2{
+		top: 36%;
+		left: 48%;
+	}
+	.pin_azul2{
+		top: 74.5%;
+		left: 58.6%;
+	}
+	.log8_cotas{
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 30%;
+		right: 10%;
+		grid-row-gap: 2rem;
+	}
+	.log6_cotas_div{
+		display: flex;
+		align-items: center;
+		column-gap: .8rem;
+	}
+	.log6_cotas_circle{
+		width: 2.8rem;
+		height: 2.8rem;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.circle_km{
+		background-color: var(--lima);
+	}
+	.circle_energia{
+		background-color: var(--azul);
+	}
+	.circle_energia img{
+		width: 60%;
+	}
+
+	.circle_emision{
+		background-color: var(--naranja);
+	}
+	.circle_emision img{
+		width: 60%;
+	}
+	.cotas_p1{
+		font-size: .8rem;
+	}
+	.cotas_p2{
+		font-size: 1.8rem;
+	}
+	.cotas_p2 span{
+		font-size: .9rem;
+	}
+	.log8_path{
+		position: absolute;
+		top: 32%;
+		left: 40.5%;
+		width: 20%;
 	}
