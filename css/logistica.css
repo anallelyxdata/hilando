@@ -1,12 +1,18 @@
 .div_logistica{
 	height: 100vh;
-	/*background-color: #eaeaea;*/
 }
+.section_logistica{
+	background-image: url('../img/fondos/textura_gris.png');
+	background-attachment: fixed;
+}
+
 
 /* Sec 1 */
 	.logistica1{
 		background-size: cover;
-		background-image: url('../img/logistica/fondo_ciudad.png'),url('../img/fondos/textura_gris.png');
+		background-image: url('../img/logistica/fondo_ciudad.png');
+		background-position: 0% -800%;
+		background-repeat: no-repeat;
 		display: flex;
 		justify-content: flex-end;
 		align-items: flex-end;
@@ -20,16 +26,18 @@
 		font-size: 3.8rem;
 		color: var(--lima);
 		margin-bottom: 1.5rem;
+		opacity: 0;
 	}
 	.logistica1 p{
 		font-size: 1.1rem;
 		width: 80%;
+		opacity: 0;
 	}
 
 /* Sec 2 */
 	.logistica2{
 		padding: 5% 10%;
-		background-image: url('../img/fondos/textura_gris.png');
+		/*background-image: url('../img/fondos/textura_gris.png');*/
 		background-size: cover;
 		text-align: center;
 		display: flex;
@@ -40,6 +48,11 @@
 		margin-bottom: 1rem;
 		font-size: 1.4rem;
 	}
+	.logistica2_titulo{
+		position: relative;
+		animation: none 1.5s ease 1 forwards;
+      /*transform: translateY(0);*/
+	}
 	.log2_subtitulo{
 		font-size: 1.1rem;
 	}
@@ -49,9 +62,10 @@
 		justify-content: center;
 		position: relative;
 		left: 7.5rem;
+		animation: none 1.5s ease 1 forwards;
 	}
 	.log2_transportes div{
-		border: dashed 2px var(--azul);
+		/*border: solid 2px var(--azul);*/
 		border-radius: 50%;
 		height: 22rem;
 		width: 22rem;
@@ -61,8 +75,45 @@
 		box-sizing: border-box;
 		position: relative;
 	}
+	/* efectos */
+		.log2_transportes div::before,
+		.log2_transportes div::after {
+		    box-sizing: inherit;
+		    content: '';
+		    position: absolute;
+		    width: 100%;
+		    height: 100%;
+		}
+		.spin:before,
+		.spin:after {
+		    top: 0;
+		    left: 0;
+		    border-style: dashed;
+		}
+		.spin:before {
+		    border: 2px dashed transparent;
+		     transition: border-top-color 0.25s linear, border-right-color 0.25s linear 0.20s, border-bottom-color 0.25s linear 0.30s;
+			animation: none 1.5s ease 1 forwards;
+		}
+		.spin:after {
+		    border: 0 dashed transparent;
+		    transition: transform 0.14s linear 0s, border-left-width 0s linear 0.45s, -webkit-transform 0.14s linear 0s;
+			animation: none 1.5s ease 1 forwards;
+		}
+		.circle {
+		    border-radius: 100%;
+		    box-shadow: none;
+		}
+
+		.circle:before,
+		.circle:after {
+		    border-radius: 100%;
+		}
+
 	.log2_transportes div img{
 		width: 80%;
+		opacity: 0;
+		transition: all .8s ease;
 	}
 	.log2_transporte_camion{
 		left: -2.5rem;
@@ -78,29 +129,32 @@
 		top: 108%;
 		text-transform: uppercase;
 		letter-spacing: 4px;
+		opacity: 0;
+		transition: all .8s ease;
 	}
 	.log_p_uso{
 		margin: 0 auto;
 		width: 50%;
 		margin-top: 6rem;
+		opacity: 0;
 	}
 
 /* Sec 3 */
 	.logistica3{
 		padding: 5% 10%;
-		background-image: url('../img/fondos/textura_gris.png');
 		display: flex;
 		flex-direction: column;
 		position: relative;
 	}
 	.log3_fondo_fabrica{
 		position: absolute;
-		bottom: 0;
+		bottom: -60%;
 		width: 100%;
 		left: 0;
 	}
 	.log_texto{
 		position: absolute;
+		opacity: 0;
 	}
 	.log_texto h3{
 		margin-bottom: .5rem;
@@ -136,17 +190,23 @@
 
 /* Sec 4 */
 	.logistica4{
-		padding: 5% 10%;
-		background-image: url('../img/fondos/textura_gris.png');
+		padding: 5% 0;
+		/*background-image: url('../img/fondos/textura_gris.png');*/
 		display: flex;
 		flex-direction: column;
 		position: relative;
 		text-align: center;
 	}
+	.log4_playeras_container{
+		display: flex;
+		position: relative;
+		left: -150%;
+	}
 	.log4_playeras{
 		margin: 0 auto;
 		text-align: center;
 		position: relative;
+		width: 100%;
 	}
 	.log4_playeras_tubo{
 		position: absolute;
@@ -157,10 +217,16 @@
 		z-index: 0;
 	}
 	.log4_playeras_img{
-		width: 100%;
-		margin-top: 5%;
+		width: 80%;
+		margin-top: 4%;
 		margin-bottom: 2rem;
 		z-index: 20;
+		position: relative;
+		/*border: solid;*/
+	}
+	.playeras2{
+		position: relative;
+		transform: translateX(-8%);
 	}
 	.log4_titulo{
 		color: var(--azul);
@@ -171,12 +237,14 @@
 		width: 60%;
 		margin: 0 auto;
 		font-size: 1.1rem;
+		position: relative;
+		animation: none 1.5s ease 1 forwards;
 	}
 
 /* Sec 5 */
 	.logistica5{
 		padding: 5% 10%;
-		background-image: url('../img/fondos/textura_gris.png');
+		/*background-image: url('../img/fondos/textura_gris.png');*/
 		display: flex;
 		flex-direction: column;
 		position: relative;
@@ -186,6 +254,7 @@
 		font-size: 1.1rem;
 		position: absolute;
 		top: 35%;
+		opacity: 0;
 	}
 	.ruta_internacional h3{
 		font-size: 1.4rem;
@@ -193,14 +262,68 @@
 		margin-bottom: .8rem;
 	}
 	.ruta_int_img{
+		border: solid 3px var(--lima);
 		position: absolute;
-		width: 55%;
-		left: 15%;
+		width: 24vw;
+		height: 24vw;
+		left: 38%;
+		top: 20%;
+		z-index: 10;
+		opacity: 0;
+		transform-origin: center center;
+		border-radius: 50%;
+		background-color: #dbd6d3;
+		overflow: hidden;
+	}
+	.ruta_int_img_img{
+		width: 150%;
+	}
+	.path_container1 {
+	    width:33%;
+	    left: 15%;
+	    top: 12%;
+	    position: absolute;
+	    /* Set a height or max-height if necessary */
+	    height: auto;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+	.ruta_int_path1 {
+	    width: 100%;
+	    height: auto; /* Maintain aspect ratio */
+	}
+
+	.path_container2 {
+	    width:96%;
+	    left:-.5%;
+	    top: 33%;
+	    position: absolute;
+	    /* Set a height or max-height if necessary */
+	    height: auto;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+	.ruta_int_path2 {
+	    width: 100%;
+	    height: auto; /* Maintain aspect ratio */
+	}
+
+	.ruta_int_path2{
+		position: absolute;
+		width: 	33%;
+		top: 32%;
+		left: 39.8%;
+		z-index: 15;
 	}
 	.ruta_internacional_timeline{
 		position: absolute;
-		right: 12%;
-		top: 35%;
+		right: 10%;
+		top: 28%;
+		opacity: 0;
 	}
 	.ruta_internacional_timeline::before{
 		content: '';
@@ -223,6 +346,7 @@
 		font-size: 1.1rem;
 		position: relative;
 		margin-left: 10%;
+		opacity: 0;
 	}
 	.ruta_internacional_timeline p::before{
 		content: '';
@@ -236,19 +360,25 @@
 	}
 
 /* Sec 6 */
+	.log56{
+		opacity: 0;
+	}
 	.logistica6{
-		padding: 5% 10%;
-		background-image: url('../img/fondos/textura_gris.png');
+		/*padding: 5% 10%;*/
+		/*background-image: url('../img/fondos/textura_gris.png');*/
 		display: flex;
 		flex-direction: column;
 		position: relative;
+		border: solid;
 	}
 	.log6_ejemplo{
 		position: absolute;
 		left: 22%;
 		width: 45%;
+		top: 5%;
 		line-height: 1.3;
 		font-size: 1.1rem;
+		opacity: 0;
 	}
 	.log6_mapa{
 		position: absolute;
@@ -261,6 +391,7 @@
 		position: relative;
 		left: 12.5%;
 		margin: 0 auto;
+		visibility: hidden;
 	}
 	.logistica_badge{
 		position: absolute;
@@ -270,6 +401,7 @@
 		padding: 8px;
 		align-items: center;
 		box-shadow: 0 1.215px 8.1511px rgba(0, 0, 0, 0.61);
+		opacity: 0;
 	}
 	.badge_titulo{
 		letter-spacing: 2px;
@@ -312,18 +444,22 @@
 		padding-right: 1.5rem;
 	}
 	.badge_naranja{
-		top: 62%;
-		left: 67%;
+		top: 74%;
+		left: 60%;
 		background-color: var(--naranja);
 		padding-right: 1.5rem;
 	}
 	.pin{
 		position: absolute;
 		width: 4.5%;
+		opacity: 0;
 	}
 	.pin_blanco{
 		top: 44%;
 		left: 23%;
+	}
+	.linea_pin{
+		opacity: 0;
 	}
 	.linea_pin_blanco{
 		height: 2px;
@@ -364,15 +500,15 @@
 		right: -22%;
 	}
 	.pin_naranja{
-		top: 52%;
-		left: 70%;
+		top: 65%;
+		left: 62%;
 		z-index: 10;
 	}
 	.linea_pin_naranja{
 		height: 2px;
 		border-top: dashed 4px var(--verde);
 		position: absolute;
-		width: 44%;
+		width: 40%;
 		top: 57%;
 		right: -17%;
 	}
@@ -389,21 +525,21 @@
 		height: 2px;
 		border-top: dashed 4px var(--verde);
 		position: absolute;
-		width: 2%;
-		top: 58.2%;
-		right: 26.5%;
-		transform: rotate(-225deg);
+		width: 5.8%;
+		top: 59%;
+		right: 23%;
+		transform: rotate(-20deg);
 	}
 	.log6_barco{
 		position: absolute;
 		width: 18%;
 		top: 25%;
-		left: 1%;
+		left: -30%;
 	}
 	.log6_cotas{
 		display: flex;
 		position: absolute;
-		bottom: 0%;
+		bottom: -40%;
 		right: 10%;
 		column-gap: 2rem;
 	}
@@ -443,7 +579,136 @@
 		font-size: 1.8rem;
 	}
 
+/* Sec 7 */
+	.logistica7{
+		padding: 5% 10%;
+		/*background-image: url('../img/fondos/textura_gris.png');*/
+		display: flex;
+		flex-direction: column;
+		position: relative;
+	}
+	.ruta_internacionalN{
+		width: 22%;
+		font-size: 1.1rem;
+		position: absolute;
+		top: 35%;
+		opacity: 0;
+	}
+	.ruta_internacionalN h3{
+		font-size: 1.4rem;
+		color: var(--azul);
+		margin-bottom: .8rem;
+	}
+	.ruta_int_imgN{
+		border: solid 3px var(--lima);
+		position: absolute;
+		width: 24vw;
+		height: 24vw;
+		left: 38%;
+		top: 20%;
+		z-index: 10;
+		opacity: 0;
+		transform-origin: center center;
+		border-radius: 50%;
+		background-color: #dbd6d3;
+		overflow: hidden;
+	}
+	.ruta_int_img_imgN{
+		width: 100%;
+		/*opacity: 0;*/
+	}
+	.ruta_int_img_imgN2{
+		width: 62%;
+		position: absolute;
+		top: 16.5%;
+		left: 17.5%;
+		z-index: 20;
+	}
+	.path_container1N {
+	    width:33%;
+	    left: 15%;
+	    top: 12%;
+	    position: absolute;
+	    /* Set a height or max-height if necessary */
+	    height: auto;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+	.ruta_int_path1N {
+	    width: 100%;
+	    height: auto; /* Maintain aspect ratio */
+	}
+
+	.path_container2N {
+	    width:96%;
+	    left:-.5%;
+	    top: 33%;
+	    position: absolute;
+	    /* Set a height or max-height if necessary */
+	    height: auto;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+
+	.ruta_int_path2N {
+	    width: 100%;
+	    height: auto; /* Maintain aspect ratio */
+	}
+
+	.ruta_int_path2N{
+		position: absolute;
+		width: 	33%;
+		top: 32%;
+		left: 39.8%;
+		z-index: 15;
+	}
+	.ruta_internacional_timelineN{
+		position: absolute;
+		right: 10%;
+		top: 28%;
+		opacity: 0;
+	}
+	.ruta_internacional_timelineN::before{
+		content: '';
+		position: absolute;
+		height: 68%;
+		top: 20%;
+		width: 2px;
+		left: 2.8%;
+		background-color: var(--verde);
+	}
+	.ruta_internacional_timelineN h3{
+		color: var(--azul);
+		font-size: 1.3rem;
+		margin-bottom: .8rem;
+	}
+	.ruta_internacional_timelineN p{
+		font-family: 'FilsonProMedium', sans-serif;
+		color: var(--verde);
+		margin: 2rem 0;
+		font-size: 1.1rem;
+		position: relative;
+		margin-left: 10%;
+		opacity: 0;
+	}
+	.ruta_internacional_timelineN p::before{
+		content: '';
+		position: absolute;
+		width: 13px;
+		height: 13px;
+		background-color: var(--verde);
+		top: 15%;
+		border-radius: 50%;
+		left: -10%;
+	}
+
 /* Sec 8 */
+	.logistica8{
+		opacity: 0;
+	}
 	.log8_texto{
 		position: absolute;
 		left: 22%;
@@ -462,35 +727,42 @@
 		height: 100%;
 		width: 100%;
 	}
+	.log8_mapa path{
+		/*transition: all 4s ease;*/
+	}
 	.log8_mapa_mapa{
 		position: absolute;
 		width: 100%;
 		height: 100%;
+		visibility: hidden;
+	}
+	.log8_badge{
+		opacity: 0;
 	}
 	.badge_verde2{
 		top: 26%;
-		left: 32%;
+		left: 33%;
 		background-color: var(--verde);
 		color: #fff;
 		padding-right: 1.5rem;
 	}
 	.badge_azul2{
-		top: 81%;
-		left: 49%;
+		top: 86%;
+		left: 52%;
 		background-color: var(--azul);
 		color: #fff;
 		padding-right: 1rem;
 	}
 	.badge_lima2{
 		top: 55%;
-		left: 25%;
+		left: 26.5%;
 		background-color: var(--lima);
 		color: var(--verde);
 		padding-right: 1.5rem;
 	}
 	.badge_naranja2{
 		top: 40%;
-		left: 53%;
+		left: 52%;
 		color: #fff;
 		background-color: var(--naranja);
 		padding-right: 1.5rem;
@@ -499,37 +771,41 @@
 		position: absolute;
 		width:8%;
 		top: 39%;
-		left: 35%;
+		left: -35%;
 		z-index: 10;
 	}
 	.pin2{
 		position: absolute;
 		width: 4%;
 		z-index: 10;
+		opacity: 0;
 	}
 	.pin_verde2{
-		top: 25%;
-		left: 44%;
+		top: 24.8%;
+		left: 44.6%;
 	}
 	.pin_lima2{
 		top: 49%;
 		left: 39%;
 	}
 	.pin_naranja2{
-		top: 36%;
-		left: 48%;
+		top: 34.2%;
+		left: 47.8%;
 	}
 	.pin_azul2{
-		top: 74.5%;
-		left: 58.6%;
+		top: 82.5%;
+		left: 61.6%;
 	}
 	.log8_cotas{
 		display: flex;
 		flex-direction: column;
 		position: absolute;
 		top: 30%;
-		right: 10%;
+		right: -30%;
 		grid-row-gap: 2rem;
+	}
+	.log8_ejemplo{
+		opacity: 0;
 	}
 	.log6_cotas_div{
 		display: flex;
@@ -569,9 +845,22 @@
 	.cotas_p2 span{
 		font-size: .9rem;
 	}
-	.log8_path{
+	.log8_path1SVG{
 		position: absolute;
-		top: 32%;
+		top: 31.7%;
+		left: 40.3%;
+		width: 5.8%;
+		transform: ;
+	}
+	.log8_path2SVG{
+		position: absolute;
+		top: 55.8%;
 		left: 40.5%;
-		width: 20%;
+		width: 23%;
+	}
+	.log8_path3SVG{
+		position: absolute;
+		top: 41%;
+		left: 49.3%;
+		width: 14%;
 	}

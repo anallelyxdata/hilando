@@ -239,3 +239,60 @@
     transform-origin: center center;
   }
 }
+
+@keyframes rotate1 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes grow2 {
+  0% {
+    transform: scale(1);
+    transform-origin: center center;
+  }
+  50% {
+    transform: scale(0.8);
+    transform-origin: center center;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: center center;
+  }
+}
+
+@keyframes borders {
+  0% {
+    border-top-color: var(--azul);
+  }
+  50% {
+    border-right-color: var(--azul);
+  }
+  100% {
+    border-bottom-color: var(--azul);
+  }
+}
+@keyframes borders2 {
+  0% {
+    border-top: 2px dashed var(--azul);
+  }
+  40% {
+    border-left-width: '2px';
+  }
+  60% {
+    border-right-width: '2px';
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+
+@keyframes moveUp {
+  0% {
+      transform: translateY(150px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -979,15 +979,7 @@
 		width: 100%;
 		visibility: hidden;
 	}
-	.intro5_img{
-		/*border: solid blue;*/
-		height: 100vh;
-		/*position: sticky;
-		top: 0;*/
-		position: relative;
-		right: -100%;
-		/*transition: all 1.5s ease;*/
-	}
+	
 	.intro5_agua{
 		width: 80%;
 		position: absolute;
